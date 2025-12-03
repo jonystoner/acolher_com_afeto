@@ -158,11 +158,18 @@ puxarInformacoes2()
 // 5. Jogue esse nome dentro da div (id="resultado-tela").
 
 // Resposta 2:
+const botaoCarregar = document.getElementById("btn-carregar")
+botaoCarregar.addEventListener("click", async function() {
+    const resposta = await fetch(url)
+    const dados = await resposta.json()
+    const nomeUsuario = dados.name
+
+    const resultadoTela = document.getElementById("resultado-tela")
+    resultadoTela.innerText = nomeUsuario
+})
 
 
-
-
-
+        
 // --- EXERCÍCIO 3: Fazendo um POST (Enviando dados) ---
 // Agora vamos enviar um novo "Post" para o servidor.
 // O botão "Criar Post" tem id="btn-enviar".
@@ -182,9 +189,16 @@ puxarInformacoes2()
 // 3. Pegue a resposta, converta para json e mostre no console (O servidor vai devolver o ID do novo post).
 
 // Resposta 3:
-
-
-
+const botaoEnviar = document.getElementById("btn-enviar")
+botaoEnviar.addEventListener("click", async function() {
+    const resposta = await fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify( { title: 'Aprendendo Fetch', body: 'Conteúdo teste', userId: 1 } )
+    })
+    const dados = await resposta.json()
+    console.log(dados)
+})          
 
 
 
@@ -201,6 +215,20 @@ puxarInformacoes2()
 // 5. Chame a função.
 
 // Resposta 4:
+
+// async function buscarComErro() {
+//     try {
+//         const resposta = await fetch('https://site-que-nao-existe.com')
+//         const dados = await resposta.json()
+//         console.log(dados)
+//     } catch (erro) {
+//         alert("Ops, deu erro: " + erro)
+//     }
+// }
+
+// buscarComErro()
+
+
 
 
 // --- EXERCÍCIO 5: Atualização Parcial (PATCH) ---
@@ -223,6 +251,18 @@ puxarInformacoes2()
 // Resposta 5:
 
 
+const botaoPatch = document.getElementById("btn-patch")
+botaoPatch.addEventListener("click", async function() { 
+    const resposta = await fetch('https://jsonplaceholder.typicode.com/users/1', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: "silvakarina500@gmail.com "   })
+    })          
+    const dados = await resposta.json()
+    console.log(dados)
+})  
+
+
 
 // --- EXERCÍCIO 6: Substituição Completa (PUT) ---
 // Queremos TROCAR COMPLETAMENTE o Post 1 por um novo. O antigo é apagado e o novo entra no lugar.
@@ -242,6 +282,18 @@ const url3 = 'https://jsonplaceholder.typicode.com/posts/1'
 // 3. Mostre o resultado no console.
 
 // Resposta 6:
+const botaoPut = document.getElementById("btn-put") 
+
+botaoPut.addEventListener("click", async function() {
+    const resposta = await fetch('https://jsonplaceholder.typicode.com/posts/1', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id: 1, title: "Post Novo", body: "Texto novo", userId: 1 })
+    })
+    const dados = await resposta.json()
+    console.log(dados)
+})      
+
 
 
 
@@ -261,6 +313,15 @@ const url3 = 'https://jsonplaceholder.typicode.com/posts/1'
 // 3. Mostre o resultado no console (Geralmente retorna um objeto vazio {} confirmando).
 
 // Resposta 7:
+
+const botaoDelete = document.getElementById("btn-delete")
+botaoDelete.addEventListener("click", async function() {    
+    const resposta = await fetch('https://jsonplaceholder.typicode.com/posts/1', {
+        method: 'DELETE'
+    })
+    const dados = await resposta.json()
+    console.log(dados)
+})
 
 
 
