@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="filhoAutista.css">
+    <title>Filho Autista</title>
+</head>
+
+<body>
+
+    <!-- Topo do site -->
+    <header id="header" class="header">
+
+        <!-- LOGO -->
+        <a href="#home" class="logo">
+
+            <!-- imagem da logo -->
+            <img class="img-logo" src="img/Home/originais/logo.png" alt="Logo acolher com afeto sem quebra cabeça">
+
+            <!-- Arco + texto -->
+            <svg class="arco-svg">
+                <path id="arco" d="M20,90 Q150,230 280,80" fill="transparent" />
+                <!-- Ajuste os valores para modificar o arco -->
+                <text class="texto-arco"> <!-- Texto dentro do arco -->
+                    <textPath href="#arco">
+                        ACOLHER COM AFETO
+                    </textPath>
+                </text>
+            </svg>
+        </a>
+
+
+        <!-- BARRA DE NAVEGAÇÃO -->
+        <nav class="navegacao" aria-label="Navegação principal">
+
+            <ul class="nav-link">
+                <li><a href="sobrenos.html" class="link">Sobre Nós</a></li>
+                <li><a href="parafamilia.html" class="link">Para Família</a></li>
+                <li><a href="paraprofissional.html" class="link">Para Profissional</a></li>
+                <li><a href="contato.html" class="link">Contato</a></li>
+                <li><a href="loja.html" class="link">Loja</a></li>
+            </ul>
+
+        </nav>
+
+
+        <!-- BARRA DE BUSCA -->
+        <form class="barra-de-busca" role="search">
+
+            <!-- Acessível para leitores de tela -->
+            <label for="pesquisar" class="sr-only">
+                Pesquisar no site
+            </label>
+
+            <img src="img/Home/originais/Search.jpg" alt="" aria-hidden="true" class="icone">
+
+            <input type="search" id="pesquisar" name="pesquisar" placeholder="Pesquisar" class="pesquisar">
+
+        </form>
+
+
+        <!-- MENU MOBILE -->
+        <button onclick="menuShow()" class="menu-btn" aria-label="Abrir menu">
+            <img class="icon-bnt" src="img/Home/originais/menu.png" alt="" aria-hidden="true">
+        </button>
+
+        <!-- Menu do mobile -->
+
+    </header>
+    <section>
+        <figure class="banner-img2">
+            <img src="img/familia/atualizadas/imagem2.gif" alt="">
+        </figure>
+
+    </section>
+
+    <div>
+        <h1> Entendendo o desenvolvimento do seu filho.</h1>
+        <p>Cada criança com autismo é única, então o desenvolvimento pode variar muito. Observe o que ele gosta, como ele se comunica (mesmo que não use palavras), e quais são suas dificuldades e pontos fortes. Isso ajuda a direcionar as intervenções</p>
+
+        <h2>Principais tipos de terapias e como elas ajudam.</h2>
+
+        <ul>
+            <li>ABA (Análise do Comportamento Aplicada): Focada em ensinar habilidades específicas e reduzir comportamentos desafiadores, por meio de reforço positivo.</li>
+            <li>Fonoaudiologia: Ajuda na comunicação, seja para desenvolver a fala, usar recursos alternativos (como imagens ou aparelhos de fala) ou melhorar a linguagem.</li>
+            <li>Terapia Ocupacional: Trabalha a coordenação motora, habilidades sociais e a autonomia nas atividades diárias (como comer, vestir-se, higiene).</li>
+            <li>Psicologia: Para ajudar seu filho a lidar com emoções, ansiedade e desenvolver habilidades sociais.</li>
+
+        </ul>
+
+        <h2>Rotina e ambiente estruturado.</h2>
+
+        <p>Crianças com autismo costumam se beneficiar muito de uma rotina previsível e ambiente organizado. Use agendas visuais (como quadros com figuras) para mostrar as atividades do dia, isso traz segurança e ajuda na transição entre tarefas.</p>
+
+        <h2>Estimule a comunicação</h2>
+        <p>Mesmo que ele não fale, busque formas alternativas, como imagens, gestos ou dispositivos eletrônicos que auxiliem na expressão de necessidades e desejos.</p>
+
+        <h2>Busque apoio para você e para a família.</h2>
+
+        <p>Lidar com o diagnóstico pode ser desgastante. Procure grupos de apoio para pais, psicólogos ou assistentes sociais que possam ajudar a cuidar também da sua saúde emocional. A troca de experiências com outras famílias faz muita diferença.
+</p>
+
+<h2>Direitos e acesso a serviços.</h2>
+
+<p>No Brasil, pessoas com TEA têm direitos garantidos por lei, como atendimento educacional especializado, prioridade em saúde e inclusão social. Procure centros especializados, associações de autismo na sua cidade e programas do gorverno.</p>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Meu Filho é Autista. E Agora? Todos os direitos reservados.</p> 
+    </footer>
+    
+    </html>
+    </body>
