@@ -13,17 +13,13 @@
     <!-- Topo do site -->
     <header id="header" class="header">
 
-        <!-- LOGO -->
-        <a href="#home" class="logo">
+        <a href="index.html" class="logo">
+            <img class="img-logo" src="Home/originais/logo.png" alt="Logo acolher com afeto sem quebra cabeça">
 
-            <!-- imagem da logo -->
-            <img class="img-logo" src="img/Home/originais/logo.png" alt="Logo acolher com afeto sem quebra cabeça">
-
-            <!-- Arco + texto -->
             <svg class="arco-svg">
                 <path id="arco" d="M20,90 Q150,230 280,80" fill="transparent" />
-                <!-- Ajuste os valores para modificar o arco -->
-                <text class="texto-arco"> <!-- Texto dentro do arco -->
+
+                <text class="texto-arco">
                     <textPath href="#arco">
                         ACOLHER COM AFETO
                     </textPath>
@@ -31,51 +27,35 @@
             </svg>
         </a>
 
-
-        <!-- BARRA DE NAVEGAÇÃO -->
         <nav class="navegacao" aria-label="Navegação principal">
 
+            <button class="hamburger"></button>
             <ul class="nav-link">
                 <li><a href="sobrenos.html" class="link">Sobre Nós</a></li>
-                <li><a href="parafamilia.html" class="link">Para Família</a></li>
+                <li><a href="../ParaFamilia/familia.html" class="link">Para Família</a></li>
                 <li><a href="paraprofissional.html" class="link">Para Profissional</a></li>
-                <li><a href="contato.html" class="link">Contato</a></li>
+                <li><a href="#footer" class="link">Contato</a></li>
                 <li><a href="loja.html" class="link">Loja</a></li>
             </ul>
-
         </nav>
 
-
-        <!-- BARRA DE BUSCA -->
         <form class="barra-de-busca" role="search">
-
-            <!-- Acessível para leitores de tela -->
             <label for="pesquisar" class="sr-only">
                 Pesquisar no site
             </label>
-
-            <img src="img/Home/originais/Search.jpg" alt="" aria-hidden="true" class="icone">
-
+            <img src="Home/originais/Search.jpg" alt="" aria-hidden="true" class="icone">
             <input type="search" id="pesquisar" name="pesquisar" placeholder="Pesquisar" class="pesquisar">
-
         </form>
 
-
-        <!-- MENU MOBILE -->
-        <button onclick="menuShow()" class="menu-btn" aria-label="Abrir menu">
-            <img class="icon-bnt" src="img/Home/originais/menu.png" alt="" aria-hidden="true">
-        </button>
-
-        <!-- Menu do mobile -->
-
     </header>
+<main>
     <section>
         <figure class="banner-img2">
             <img src="img/familia/atualizadas/pagina1.gif" alt="criança autista brincando com blocos de montar">
         </figure>
 
     </section>
-
+</main>
     <div>
         <h1>Autismo: tudo o que você precisa saber sobre o Transtorno do Espectro Autista (TEA)</h1>
 
@@ -141,6 +121,47 @@
             compreendida, apoiada e amada como é.</p>
 
     </div>
+     <footer class="footer" id="footer">
+        <div class="conteiner-footer">
+
+            <div class="item-footer1">
+                <img src="Home/originais/logo.png" alt="" class="img-footerlogo">
+                <p>Um site especializado em facilitar o dia a dia do autista e sua familia.</p>
+            </div>
+
+            <div class="item-footer2">
+                <h3>Mapa do site > </h3>
+                <ul class="mapa-site">
+                    <li>Sobre Nós</li>
+                    <li>Para a Família</li>
+                    <li>Para Profissional</li>
+                    <li>Contatos</li>
+                    <li>Loja</li>
+                </ul>
+            </div>
+            <div class="item-footer3">
+                <h3>Precisa de suporte</h3>
+                <a href="#"><img src="Home/originais/Email.png" alt="Email"
+                        class="img-footer3"><span>E-mail</span></a>
+                <a href="https://wa.me/5511958399497" target="_blank"><img src="Home/originais/Vector.png"
+                        alt="Telefone" class="img-footer3"><span>Fale Conosco</span></a>
+            </div>
+
+            <div class="item-footer4">
+                <ul class="footer4">
+                    <li><a href="#" class="social-link"><span>Siga-nos</span><img src="Home/originais/Instagram.png"
+                                alt="Instagram" class="img-instagram"></a></li>
+                    <li><a href="#" class="termos-condicoes">Termos &amp; Condições</a></li>
+                    <li> <a href="#" class="politica-privacidade">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="item-footer5">
+                <a href="#header" class="voltar-topo">Voltar ao topo</a>
+            </div>
+        </div>
+        <p class="Copyright">Copyright © 2025 ”acolhercomafeto.com.br” Todos direitos reservados.</p>
+    </footer>
 
 </html>
 </body>
