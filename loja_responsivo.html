@@ -5,91 +5,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Loja ACA</title>
-   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="loja_responsivo.css">
 
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo.gif" alt="Logo Acolher com Afeto" width="100" height="auto" class="me-2">
+            </a>
 
 
-    <header>
-        <div class="topo-assistencia">
-            <a href="#"> Fale conosco </a>
-            <a href="#"> Rastrear encomenda </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre nós</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Para Família</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Para Profissionais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Loja</a></li>
+                </ul>
+            </div>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
         </div>
-
-        <nav class="menu-topo">
-            <div class="logo">
-                <img src="imagens originais/Logo acolher com afeto sem quebra cabeça.png" alt="logo Acolher com afeto"
-                    width="50px" height="50px">
-            </div>
-
-            <div class="busca">
-                <input type="text" placeholder="digite o que você procura">
-            </div>
-
-            <div class="Acesso-a-loja">
-                <a href="#">
-                    <svg xmlns="http://www.w3.org" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                        <path fill-rule="evenodd"
-                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                    </svg>
-                 
-                </a>
-                <a>  Entrar </a>
-
-            </div>
-        </nav>
-
-
-        <nav class="menu de produtos">
-            <ul>
-                <li> <a href="#">Acessórios </a></li>
-                <li> <a href="#">Brinquedos </a></li>
-                <li> <a href="#">Roupas </a></li>
-            </ul>
-        </nav>
-
-
-    </header>
-
-    <main>
-        <div class="Banner">
-            <img src="img\voltaasaulas2_320 .webp" alt="banner">
+    </nav>
+    <section class="banner">
+        <div class="container">
+            <h1>O que é autismo?</h1>
+            <p class="mt-3 fs-5">Entenda o Transtorno do Espectro Autista (TEA)</p>
+            <img src="img/img1.png" alt="Fita do Autismo" class="img-fluid my-3" width="1200">
+            <br>
+            <button class="btn-saiba-mais">Saiba mais</button>
         </div>
-        <div class="container-principal">
-            <aside class="menu-lateralEsq-categorias">
-                <h2> Categorias</h2>
-                <nav>
-                    <h3> Acessórios</h3>
-                    <ul>
-                        <li> <a href="imagens originais/cordão girassol2.webp">Cordão Identificador </a></li>
-                        <li> <a href="imagens originais/cordão girassol2.webp">Cordão Identificador </a></li>
-                    </ul>
+    </section>
+    <section class="loja">
+        <div class="container">
+            <h2 class="fw-bold mb-4 text-dark">Conheça nossa Loja</h2>
+            <img src="loja.png" alt="Ilustração loja" class="img-fluid mb-3" width="200">
+            <br>
+            <button class="btn-loja">Acessar Loja</button>
+        </div>
+    </section>
 
-                    <h3> Brinquedos</h3>
-                    <ul>
-                        <li> <a href="imagens originais/bolinhas sensoriais.webp">Bolinhas sensoriais</a></li>
-                    </ul>
 
-                    <h3> Roupas </h3>
-                    <ul>
-                        <li> </li>
-                    </ul>
+    <section class="especialidades">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Fique por dentro das especialidades</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-3 mb-4">
+                    <div id="cards" class="card p-3">
+                        <img src="psicologia.jpg" class="card-img-top rounded-4 mb-2" alt="Psicologia">
+                        <h5 class="card-title">Psicologia</h5>
+                        <p class="card-text">O psicólogo apoia a pessoa com TEA e a família no desenvolvimento emocional
+                            e social.</p>
+                    </div>
+                </div>
 
-                </nav>
-            </aside>
+                <div class="col-md-3 mb-4">
+                    <div class="card p-3">
+                        <img src="terapia.jpg" class="card-img-top rounded-4 mb-2" alt="Terapia Ocupacional">
+                        <h5 class="card-title">Terapia Ocupacional</h5>
+                        <p class="card-text">A terapia ocupacional trabalha habilidades motoras e cognitivas de forma
+                            lúdica e funcional.</p>
+                    </div>
+                </div>
 
-    </main>
+                <div class="col-md-3 mb-4">
+                    <div class="card p-3">
+                        <img src="img/img1.png" class="card-img-top rounded-4 mb-2" alt="Fonoaudiologia">
+                        <h5 class="card-title">Fonoaudiologia</h5>
+                        <p class="card-text">O fonoaudiólogo atua no desenvolvimento da comunicação verbal e não verbal.
+                             fonoaudiólogo atua no desenvolvimento da comunicação verbal e não verbal.
+                              fonoaudiólogo atua no desenvolvimento da comunicação verbal e não verbal.
+                               fonoaudiólogo atua no desenvolvimento da comunicação verbal e não verbal.
+                               
 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer" id="footer">
+        <div class="conteiner-footer">
+
+            <div class="item-footer1">
+                <img src="img/originais/logo.png" alt="" class="img-footerlogo">
+                <p>Um site especializado em facilitar o dia a dia do autista e sua familia.</p>
+            </div>
+
+            <div class="item-footer2">
+                <h3>Mapa do site > </h3>
+                <ul class="mapa-site">
+                    <li>Sobre Nós</li>
+                    <li>Para a Família</li>
+                    <li>Para Profissional</li>
+                    <li>Contatos</li>
+                    <li>Loja</li>
+                </ul>
+            </div>
+            <div class="item-footer3">
+                <h3>Precisa de suporte</h3>
+                <a href="#"><img src="img/originais/Email.png" alt="Email" class="img-footer3"><span>E-mail</span></a>
+                <a href="https://wa.me/5511958399497" target="_blank"><img src="img/originais/Vector.png" alt="Telefone"
+                        class="img-footer3"><span>Fale Conosco</span></a>
+            </div>
+
+            <div class="item-footer4">
+                <ul class="footer4">
+                    <li><a href="#" class="social-link"><span>Siga-nos</span><img src="img/originais/Instagram.png"
+                                alt="Instagram" class="img-instagram"></a></li>
+                    <li><a href="#" class="termos-condicoes">Termos &amp; Condições</a></li>
+                    <li> <a href="#" class="politica-privacidade">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="item-footer5">
+                <a href="#header" class="voltar-topo">Voltar ao topo</a>
+            </div>
+        </div>
+        <p class="Copyright">Copyright © 2025”acolhercomafeto.com.br Todos direitos reservados.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
 </html>
-
-<!-- head a seção que contém metadados (informações sobre os dados) de um documento, como o título da página, links para arquivos CSS, scripts e outras informações que não são exibidas diretamente no navegador-->
-
-<!-- title define o título de um documento, que aparece na barra de título ou na aba do navegador-->
