@@ -12,6 +12,9 @@
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
+img{
+    width: 100%;
+}
 
 html {
     scroll-behavior: smooth;
@@ -165,6 +168,9 @@ body {
 }
 
 /* --- RODAPÉ --- */
+footer{
+    border-top: solid 3px rgb(47, 78, 48);
+}
 
 .conteiner-footer {
     display: flex;
@@ -273,6 +279,9 @@ body {
     padding: 10px 55px 10px;
 }
 
+
+/* --- RESPONSIVEL --- */
+
 /* Botão hamburger*/
 .hamburger {
     display: none;
@@ -300,256 +309,6 @@ body {
     transition: 0.3s;
 }
 
-/* MAIN */
-
-.main-content {
-    margin-top: 50PX;
-}
-/* -- SEÇÃO DA CHAMADA PARA A LOJA -- */
-
-.section-loja {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 200px;
-    padding: 30px 32px;
-    background: linear-gradient(180deg, var(--VerdeClaro), var(--Azulsuave));
-    /* 180deg de cima → baixo*/
-}
-
-.conteudo-loja {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 300px;
-}
-
-.btn-loja {
-    padding: 18px 44px;
-    color: var(--Preto);
-    background: linear-gradient(0deg, var(--VerdeClaro), var(--Azulsuave));
-    /* 0deg de baixo para cima */
-    font-size: 30px;
-    font-weight: 600;
-    border-radius: 20px;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-
-}
-
-/* -- ARTIGOS -- */
-
-
-.articles-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 70px;
-}
-
-
-.article-title {
-    font-size: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-
-.conteiner-cards {
-    display: flex;
-    flex-wrap: wrap;
-    /* permite quebrar em linhas */
-    justify-content: center;
-    gap: 100px 50px;
-    /* linha / coluna */
-}
-
-.article-card {
-    padding: 20px;
-    border-radius: 30px;
-    text-align: center;
-    width: 150px;
-    height: 600px;
-    margin: 0 auto;
-    flex: 0 0 calc(33.333% - 50px);
-    /* 3 colunas */
-
-}
-
-/* Cards ímpares → VERDE */
-.article-card:nth-child(odd) {
-    background-color: color-mix(in srgb, var(--VerdeClaro) 50%, var(--CinzaClaro));
-    border: 3px solid var(--VerdeClaro);
-
-    .sub-titulo {
-        border: 3px solid var(--Verdeescuro);
-        border-radius: 50px;
-        background-color: var(--VerdeClaro);
-    }
-}
-
-.sub-titulo {
-    text-align: center;
-    font-size: 24px;
-    margin-top: -50px;
-    white-space: nowrap;
-    justify-content: center;
-
-    padding: 10px 0;
-    /* aumenta a altura */
-    line-height: 1.5;
-    /* mais espaço vertical */
-}
-
-/* Cards pares → AZUL */
-.article-card:nth-child(even) {
-    background-color: color-mix(in srgb, var(--Azulsuave) 50%, var(--CinzaClaro));
-    border: 3px solid var(--Azulsuave);
-
-    .sub-titulo {
-        border: 3px solid var(--Azul);
-        border-radius: 50px;
-        background-color: var(--Azulsuave);
-    }
-}
-
-.article-img {
-    width: 100%;
-    margin-top: 15px;
-}
-
-.card-pargrafo {
-    margin-top: 20px;
-    font-size: 19px;
-    line-height: 1.3;
-    text-align: center;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
-
-
-/* BOTÃO ENTRE EM CONTATO*/
-.entre-contato {
-    background-color: var(--VerdeClaro);
-    padding: 20px;
-    border-radius: 50px;
-    text-align: center;
-    width: 450px;
-    height: 70px;
-    margin: 100px;
-    cursor: pointer;
-    font-size: 25px;
-}
-
-/* SEÇÃO FORMULARIO */
-
-.fale-gente {
-    font-size: 24px;
-    background-color: var(--Azulmedio);
-    padding: 15px 30px;
-    color: var(--Preto);
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-
-.contato-overlay {
-    position: fixed;
-    inset: 0;
-    padding: 40px 20px;
-    display: none; /* escondido */
-    flex-direction: column;
-    align-items: center;
-    z-index: 999;  
-}
-
-/* quando ativo */
-.contato-overlay.ativo {
-    display: flex;
-}
-
-/* título */
-.contato-overlay h2 {
-    color: var(--Azulsuave);
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-weight: normal;
-}
-
-/* caixa branca */
-.contato-box {
-    position: relative;
-    background-color: var(--Branco);
-    width: 100%;
-    max-width: 700px;
-    padding: 30px;
-    border-radius: 16px;
-    border: 2px solid var(--Azulsuave);
-}
-
-/* formulário */
-.form-contato {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-/* inputs */
-.form-contato input,
-.form-contato textarea {
-    width: 100%;
-    padding: 16px 20px;
-    border-radius: 16px;
-    border: 1.8px solid var(--Azulsuave);
-    font-size: 16px;
-    
-}
-
-/* textarea */
-.form-contato textarea {
-    min-height: 160px;
-    resize: none;
-}
-
-/* linha email + telefone */
-.linha {
-    display: flex;
-    gap: 15px;
-}
-
-.linha input {
-    flex: 1;
-}
-
-/* botão */
-.form-contato button {
-    align-self: center;
-    padding: 14px 40px;
-    border-radius: 18px;
-    background-color: var(--VerdeClaro);
-    font-size: 20px;
-    cursor: pointer;
-}
-
-/* botão hover */
-.form-contato button:hover {
-    background-color: var(--Verdeescuro);
-}
-
-/* botão fechar */
-.fechar {
-    position: absolute;
-    bottom: -45px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 32px;
-    cursor: pointer;
-}
-
-/* --- RESPONSIVEL --- */
 
 @media (max-width: 1250px) {
     .header {
@@ -607,62 +366,6 @@ body {
         font-size: 13px;
     }
 
-    /* Main */
-
-    .section-loja {
-        padding: 20px 15px;
-    }
-
-    .conteudo-loja {
-        gap: 300px;
-    }
-
-    .btn-loja {
-        padding: 20px 50px;
-        font-size: 20px;
-        font-weight: 600;
-    }
-
-    .img-loja {
-        width: 250px;
-        height: 250px;
-    }
-
-    .article-card {
-        padding: 20px;
-        width: 100px;
-        height: 430px;
-    }
-
-    .card-pargrafo {
-        font-size: 13px;
-    }
-
-    .sub-titulo {
-        font-size: 15px;
-        margin-top: -45px;
-        white-space: nowrap;
-        justify-content: center;
-        padding: 5px 0;
-        /* aumenta a altura */
-    }
-
-    .article-title {
-        font-size: 25px;
-        margin-top: 25px;
-    }
-
-    .entre-contato {
-        font-size: 20px;
-        padding: 13px;
-        width: 300px;
-        height: 50px;
-        margin: 15px;
-    }
-
-    .articles-section {
-        gap: 50px;
-    }
 }
 
 @media (max-width: 999px) {
@@ -730,68 +433,6 @@ body {
         text-align: center;
         /* padding: 15px 20px 5px; */
         padding: 10px 20px 10px;
-    }
-
-    /* Main */
-    .section-loja {
-        padding: 15px 10px;
-    }
-
-    .conteudo-loja {
-        gap: 130px;
-    }
-
-    .btn-loja {
-        padding: 15px 25px;
-        font-size: 15px;
-        font-weight: 600;
-    }
-
-    .img-loja {
-        width: 200px;
-        height: 200px;
-    }
-
-    .card-pargrafo {
-        font-size: 10px;
-    }
-
-    .sub-titulo {
-        font-size: 12px;
-        margin-top: -30px;
-        padding: 3px 0;
-        /* aumenta a altura */
-    }
-
-    .article-title {
-        font-size: 25px;
-        margin-top: 25px;
-    }
-
-    .entre-contato {
-        font-size: 15px;
-        padding: 10px;
-        width: 250px;
-        height: 40px;
-    }
-
-    .articles-section {
-        gap: 30px;
-    }
-
-    .article-title {
-        font-size: 20px;
-        margin-top: 20px;
-    }
-
-    .conteiner-cards {
-        gap: 30px 30px;}
-
-    .article-card {
-        padding: 15px;
-        width: 50px;
-        height: 330px;
-        flex: 0 0 calc(50% - 30px); /* 2 colunas */
     }
 
 }
@@ -932,63 +573,10 @@ body {
     .mapa-site {
         gap: 3px;
     }
+}
 
-    /* Main */
-    .conteudo-loja {
-        gap: 30px;
-    }
-
-    .btn-loja {
-        padding: 10px 10px;
-        font-size: 8px;
-        font-weight: 150px;
-        white-space: nowrap;
-    }
-
-    .img-loja {
-        width: 120px;
-        height: 120px;
-    }
-
-    .card-pargrafo {
-        font-size: 10px;
-    }
-
-    .sub-titulo {
-        font-size: 12px;
-        margin-top: -30px;
-        padding: 3px 0;
-        /* aumenta a altura */
-    }
-    
-    .article-card {
-        padding: 10px;
-        width: 25px;
-        height: 290px;
-        flex: 0 0 50%;   /* 1 coluna */}
-
-    .article-title {
-        font-size: 13px;
-        margin-top: 25px;
-    }
-
-    .card-pargrafo {
-        font-size: 8px;
-        margin-top: 0;
-    }
-
-    .sub-titulo {
-        font-size: 10px;
-        margin-top: -30px;
-        padding: 3px 0;
-        white-space: normal;   /* permite quebra de linha */
-        /* aumenta a altura */
-    }
-
-     .entre-contato {
-        font-size: 13px;
-        padding: 3px;
-        width: 150px;
-        height: 30px;
-    }
+banner-img2 img {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
