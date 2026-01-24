@@ -1,5 +1,6 @@
 .navbar-custom {
     background: linear-gradient(to right, #A8E6CF, #6FA8DC, #A8E6CF, #6FA8DC);
+    height: 75px;
 }
 
 .navbar-nav .nav-link {
@@ -25,10 +26,12 @@
 .banner h1 {
     font-weight: 800;
     font-size: 2.5rem;
-    background: linear-gradient(to right, #f00, #ff8c00, #ff0, #0f0, #00f);
+    background-color: #6FA8DC;
     -webkit-background-clip: text;
     color: transparent;
 }
+
+
 
 .btn-saiba-mais {
     background-color: #A8E6CF;
@@ -42,7 +45,7 @@
 
 
 .loja {
-    background: gray;
+    background: linear-gradient(#A8E6CF, #6FA8DC);
     text-align: center;
     padding: 40px 0;
 }
@@ -60,7 +63,27 @@
 
 }
 
+.cards_familia {
+    display: flex;
+    flex-direction: column;
+    
 
+}
+
+
+
+@media (max-width: 320px) {
+    .testes {
+        display: flex;
+        flex-direction: row;
+        height: auto;        
+      
+    }
+
+ 
+
+
+}
 .especialidades .card {
     border: none;
     border-radius: 20px;
