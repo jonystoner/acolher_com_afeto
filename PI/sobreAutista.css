@@ -27,7 +27,6 @@ html {
     --Verdeescuro: #0AF79F;
     --Azul: #1976CB;
     --Branco: #ffffff;
-    --Amarelo: #fff3b0;
  
 }
  
@@ -495,24 +494,25 @@ banner-img2 img {
 }
 
 .secao1 {
-    background-color: var(--Azulsuave);
-    color: var(--Branco);
+    background: linear-gradient(90deg,var(--VerdeClaro), var(--Azulsuave), var(--Branco));;
+    color: var(--Preto);
     cursor: pointer;
-    padding: 18px;
-    width: 100%;
+    padding: 10px;
+    width: 50%;
     text-align: left;
     border: none;
     outline: none;
     transition: 0.4s;
+    border-radius: 10px;
 }
 
 .active, .secao1:hover {
-    background-color: var(--Azulescuro);
+    background-color: var(--Azulsuave);
 }
 
 .panel1 {
     padding: 0 18px;
-    background-color: violet;
+    background-color: var(--CinzaClaro);
     display: none;
     overflow: hidden;
 
