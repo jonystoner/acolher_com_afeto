@@ -10,63 +10,51 @@
 
 <body>
 
-    <!-- Topo do site -->
+     <!-- Topo do site -->
     <header id="header" class="header">
 
-        <!-- LOGO -->
-        <a href="#home" class="logo">
+        <a href="#" class="logo">
+            <img class="img-logo" src="img/Home/gif/logo.gif" alt="Logo acolher com afeto sem quebra cabeça">
 
-            <!-- imagem da logo -->
-            <img class="img-logo" src="img/Home/originais/logo.png" alt="Logo acolher com afeto sem quebra cabeça">
+            <svg class="arco-svg" viewBox="0 0 200 110">
 
-            <!-- Arco + texto -->
-            <svg class="arco-svg">
-                <path id="arco" d="M20,90 Q150,230 280,80" fill="transparent" />
-                <!-- Ajuste os valores para modificar o arco -->
-                <text class="texto-arco"> <!-- Texto dentro do arco -->
-                    <textPath href="#arco">
+                <path id="arco" d="M 20 20 A 80 80 0 0 0 180 20" fill="transparent" />
+
+                <text class="texto-arco">
+                    <textPath href="#arco" startOffset="50%" text-anchor="middle">
+
                         ACOLHER COM AFETO
                     </textPath>
                 </text>
             </svg>
         </a>
 
-
-        <!-- BARRA DE NAVEGAÇÃO -->
         <nav class="navegacao" aria-label="Navegação principal">
 
+            <button class="hamburger"></button>
             <ul class="nav-link">
                 <li><a href="sobrenos.html" class="link">Sobre Nós</a></li>
-                <li><a href="parafamilia.html" class="link">Para Família</a></li>
+                <li><a href="../ParaFamilia/familia.html" class="link">Para Família</a></li>
                 <li><a href="paraprofissional.html" class="link">Para Profissional</a></li>
-                <li><a href="contato.html" class="link">Contato</a></li>
+                <li><a href="#footer" class="link">Contato</a></li>
                 <li><a href="loja.html" class="link">Loja</a></li>
             </ul>
-
         </nav>
 
+        <button class="search-btn" id="search-btn">
+            <img src="img/Home/originais/Search.jpg" alt="Buscar">
+        </button>
 
-        <!-- BARRA DE BUSCA -->
-        <form class="barra-de-busca" role="search">
-
-            <!-- Acessível para leitores de tela -->
+        <form class="barra-de-busca" role="search" id="barra-de-busca">
             <label for="pesquisar" class="sr-only">
                 Pesquisar no site
             </label>
 
-            <img src="img/Home/originais/Search.jpg" alt="" aria-hidden="true" class="icone">
+            <img src="img/originais/lupa1.gif" alt="">
 
             <input type="search" id="pesquisar" name="pesquisar" placeholder="Pesquisar" class="pesquisar">
-
         </form>
 
-
-        <!-- MENU MOBILE -->
-        <button onclick="menuShow()" class="menu-btn" aria-label="Abrir menu">
-            <img class="icon-bnt" src="img/Home/originais/menu.png" alt="" aria-hidden="true">
-        </button>
-
-        <!-- Menu do mobile -->
 
     </header>
     <section>
@@ -80,13 +68,19 @@
         <h1>Alfabetização e autismo.</h1>
         <p>Crianças com TEA podem apresentar desafios na comunicação, atenção, interação social e processamento sensorial, que influenciam na forma como aprendem a ler e escrever. Porém, muitas têm potencial para aprender a alfabetizar, desde que o processo seja adaptado às suas necessidades.</p>
 
+       
         <h2>Principais desafios.</h2>
+        
         <ul>
             <li>Dificuldade em manter atenção por períodos longos</li>
             <li>Problemas para entender regras sociais e linguísticas implícitas.</li>
             <li>Processamento sensorial diferente, que pode afetar o manuseio de materiais escolares</li>
             <li>Preferência por rotinas rígidas, que pode dificultar a flexibilização exigida no aprendizado.</li>
             </ul>
+            </div>
+            </div>
+            </div>
+            
 
             <h2>Estratégias para facilitar a alfabetização.</h2>
 
@@ -101,5 +95,50 @@
                 <h2>Inclusão escolar.</h2>
                 <p>A inclusão deve garantir que seu filho tenha acesso a adaptações curriculares e apoio pedagógico para que possa acompanhar o conteúdo no seu ritmo, sem pressão, valorizando o aprendizado no seu próprio tempo.</p>
     </div>
+    <footer class="footer" id="footer">
+        <div class="conteiner-footer">
+
+            <div class="item-footer1">
+                <img src="img/Home/originais/logo.png" alt="" class="img-footerlogo">
+                <p>Um site especializado em facilitar o dia a dia do autista e sua familia.</p>
+            </div>
+
+            <div class="item-footer2">
+                <h3>Mapa do site > </h3>
+                <ul class="mapa-site">
+                    <li>Sobre Nós</li>
+                    <li>Para a Família</li>
+                    <li>Para Profissional</li>
+                    <li>Contatos</li>
+                    <li>Loja</li>
+                </ul>
+            </div>
+            <div class="item-footer3">
+                <h3>Precisa de suporte</h3>
+                <a href="#"><img src="img/Home/originais/Email.png" alt="Email"
+                        class="img-footer3"><span>E-mail</span></a>
+                <a href="https://wa.me/5511958399497" target="_blank"><img src="img/Home/originais/Vector.png"
+                        alt="Telefone" class="img-footer3"><span>Fale Conosco</span></a>
+            </div>
+
+            <div class="item-footer4">
+                <ul class="footer4">
+                    <li><a href="#" class="social-link"><span>Siga-nos</span><img src="img/Home/originais/Instagram.png"
+                                alt="Instagram" class="img-instagram"></a>
+                    </li>
+                    <li><a href="#" class="termos-condicoes">Termos &amp; Condições</a></li>
+                    <li> <a href="#" class="politica-privacidade">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="item-footer5">
+                <a href="#header" class="voltar-topo">Voltar ao topo</a>
+            </div>
+        </div>
+        <p class="Copyright">Copyright © 2025 ”acolhercomafeto.com.br” Todos direitos reservados.</p>
+    </footer>
+
     </html>
     </body>
+
+    

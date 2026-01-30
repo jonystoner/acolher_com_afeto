@@ -504,6 +504,8 @@ banner-img2 img {
     outline: none;
     transition: 0.4s;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .active, .secao1:hover {
@@ -523,7 +525,8 @@ banner-img2 img {
   color: #777;
   font-weight: bold;
   float: right;
-  margin-left: 5px;
+  margin-left: 10px;
+  font-size: 20px;
 }
 
 .secao1.active:after {
