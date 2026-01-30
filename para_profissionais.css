@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-body {
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: 'Poppins';
+.navbar-custom {
+    background: linear-gradient(to right, #A8E6CF, #6FA8DC, #A8E6CF, #6FA8DC);
+    height: 75px;
 }
 
-main {
-    width: 100%;
-    background-color: #fff;
+.navbar-nav .nav-link {
+    color: #000 !important;
+    font-weight: 500;
+    margin: 0 10px;
 }
 
+.navbar-nav .nav-link:hover {
+    color: #0056b3 !important;
+}
+
+h1 {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: xx-large;
+}
+.form-control {
+    border-radius: 10px;
+}
 
 img {
     width: 100%;
@@ -225,12 +235,10 @@ input {
 /* Banner */
 .Banner {
     width: 100%;
-    margin-top: 25px;
     margin-bottom: 30px;
 }
 
 .Banner img {
-    
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -466,6 +474,145 @@ RESPONSIVO
         gap: 0px;
     }
 }
+
+.Banner {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+   
+}
+
+
+.banner-ajuste{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container {
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top:  40px;
+}
+
+
+footer {
+    border-top: solid 3px rgb(47, 78, 48);
+}
+
+.conteiner-footer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 30px 55px 30px;
+    background: linear-gradient(180deg,
+            color-mix(in srgb, var(--VerdeClaro) 25%, var(--CinzaClaro)),
+            color-mix(in srgb, var(--Azulsuave) 25%, var(--CinzaClaro)));
+    font-size: 16px;
+
+}
+
+.img-footerlogo {
+    width: 133px;
+}
+
+.item-footer1 {
+    display: flex;
+    flex-direction: column;
+    /* imagem em cima, texto embaixo */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    /* espaço entre imagem e texto */
+    max-width: 300px;
+    /* controla a quebra do texto */
+}
+
+.imagem_banner_profisional{
+    width: 100%;
+
+
+}
+.item-footer p {
+    font-size: 13px;
+}
+
+/* MAPA DO SITE */
+
+.mapa-site {
+    display: flex;
+    flex-direction: column;
+    /* lista vertical */
+    gap: 7px;
+    /* espaço entre os li */
+}
+
+/* PRECISA DE SUPORTE */
+
+.item-footer3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10PX;
+}
+
+.img-footer3 {
+    width: 20PX;
+    height: 20PX;
+    margin-right: 10px;
+}
+
+.item-footer3 a span {
+    color: var(--Preto);
+}
+
+
+/* SIGA-NOS */
+
+.item-footer4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-weight: bold;
+    /* negrito */
+}
+
+.item-footer4 ul li a {
+    color: var(--Preto);
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    /* imagem em cima, texto embaixo */
+    align-items: center;
+    /* centraliza */
+    gap: 6px;
+    /* espaço entre imagem e texto */
+}
+
+.img-instagram {
+    width: 24px;
+    height: 24px;
+}
+
+/* VOLTAR AO TOPO */
+
+.item-footer5 {
+    margin-top: 120px;
+}
+
+.voltar-topo {
+    color: var(--Preto);
+    text-decoration: underline;
+    /* sublinhado */
+}
+
+.Copyright {
+    text-align: center;
+    padding: 10px 55px 10px;
+}
+
 
 /*observações sobre a responsividade do main
 O que esse CSS faz:
