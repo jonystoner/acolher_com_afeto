@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Inclusão alimentar e Autismo</title>
+     <link rel="stylesheet" href="style.css">
 
     <style>
         /* corpo da página */
@@ -15,258 +16,6 @@
             background-color: #f2f2f2;
             color: #333;
         }
-
-       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-}
- 
-html {
-    scroll-behavior: smooth;
-}
- 
-/* --- CORES PADRÃO --- */
-:root {
-    --Azulsuave: #6FA8DC;
-    --VerdeClaro: #A8E6CF;
-    --AmareloPastel: #FFF3B0;
-    --LilasSuave: #CBAACB;
-    --CinzaClaro: #F5F5F5;
-    --Azulescuro: #2E4A62;
-    --Preto: #000000;
-    --Verdeescuro: #0AF79F;
-    --Azul: #1976CB;
-    --Branco: #ffffff;
-    --Amarelo: #fff3b0;
- 
-}
- 
-body {
-    background-color: var(--CinzaClaro);
-    color: var(--Preto);
-}
-        /* --- HEADER --- */
- 
-.header {
-    background: linear-gradient(90deg, var(--VerdeClaro), var(--Azulsuave), var(--VerdeClaro), var(--Azulsuave));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    padding: 5px 0 2px;
-    text-align: center;
-}
- 
-/* --- IMG DA LOGO + TEXTO-ARCO --- */
- 
-.logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
- 
-.img-logo {
-    display: block;
-    width: 50%;
-    height: auto;
-}
- 
-.arco-svg {
-    width: 100%;
-    height: 50px;
-    margin-top: -35px;
-}
- 
-.texto-arco {
-    font-size: 18PX;
-}
- 
-/* --- BARRA DE NAVEGAÇÃO --- */
- 
-.nav-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 40%;
-    height: 23vh;
-    background: linear-gradient(90deg, var(--VerdeClaro), var(--Azulsuave));
-    clip-path: circle(100px at 90% -50%);
-    transition: 1s ease-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    pointer-events: none;
- 
-}
- 
-.link {
-    font-size: 13px;
-    opacity: 0;
-    color: var(--Preto);
-    white-space: nowrap;
-    transition: opacity 0.5s ease;
-}
- 
-.link:hover {
-    color: var(--Azulsuave);
-    text-decoration: underline;
-}
- 
-.link:active,
-.link:focus {
-    color: var(--Preto);
-}
- 
-.nav-link li:nth-child(1) .link {
-    transition-delay: 0.2s;
-}
- 
-.nav-link li:nth-child(2) .link {
-    transition-delay: 0.4s;
-}
- 
-.nav-link li:nth-child(3) .link {
-    transition-delay: 0.6s;
-}
- 
-.nav-link li:nth-child(4) .link {
-    transition-delay: 0.8s;
-}
- 
-.nav-link li:nth-child(5) .link {
-    transition-delay: 1s;
-}
- 
- 
-/* Botão hamburger*/
-.hamburger {
-    display: block;
-    z-index: 1;
-    border: none;
-    background: none;
-    border-top: 3px solid var(--CinzaClaro);
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    left: 16px;
-}
- 
-.hamburger::before,
-.hamburger::after {
-    content: " ";
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: var(--CinzaClaro);
-    margin-top: 4px;
-    position: relative;
-    transition: 0.3s;
-}
- 
-/* Estilo ativo no Mobile*/
-.navegacao.active .nav-link {
-    clip-path: circle(1500px at 90% -15%);
-    pointer-events: all;
-}
- 
-.navegacao.active .nav-link .link {
-    opacity: 1;
-}
- 
-.navegacao.active .hamburger {
-    position: absolute;
-    top: 5px;
-    left: 0;
-    border-top-color: transparent;
-}
- 
-.navegacao.active .hamburger::before {
-    transform: rotate(135deg);
-}
- 
-.navegacao.active .hamburger::after {
-    transform: rotate(-135deg);
-    top: -7px;
-}
- 
-/* --- BARRA DE BUSCA --- */
- 
-.barra-de-busca {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 5px; 
-    background-color: var(--CinzaClaro);
-    border-radius: 5px;
- 
-   
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.2s ease;
-    width: 70%;
-    height: auto;
-}
- 
-/* quando ativa */
-.barra-de-busca.active {
-    max-height: 60px;
-    opacity: 1;
-}
- 
-.pesquisar {
-    width: 100%;
-    border-radius: 5px;
-    font-size: 12px;
-    background-color: var(--CinzaClaro);
-    height: auto;
- 
-}
- 
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    white-space: nowrap;
-    border: 0;
-}
- 
-.search-btn {
-    display: block;
-    z-index: 1;
-    border: none;
-    background: none;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 16px;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
- 
-    img {
-    
-        width: 100%;
-        height: 100%;
-        object-fit: contain; 
-        display: block;
- 
-    }
-}
-
 
 
         /* Títulos */
@@ -486,7 +235,46 @@ body {
 
 
     </main>
-
+<footer class="footer" id="footer">
+        <div class="conteiner-footer">
+ 
+            <div class="item-footer1">
+                <img src="img/originais/logo.png" alt="" class="img-footerlogo">
+                <p>Um site especializado em facilitar o dia a dia do autista e sua familia.</p>
+            </div>
+ 
+            <div class="item-footer2">
+                <h3>Mapa do site > </h3>
+                <ul class="mapa-site">
+                    <li>Sobre Nós</li>
+                    <li>Para a Família</li>
+                    <li>Para Profissional</li>
+                    <li>Contatos</li>
+                    <li>Loja</li>
+                </ul>
+            </div>
+            <div class="item-footer3">
+                <h3>Precisa de suporte</h3>
+                <a href="#"><img src="img/originais/Email.png" alt="Email" class="img-footer3"><span>E-mail</span></a>
+                <a href="https://wa.me/5511958399497" target="_blank"><img src="img/originais/Vector.png" alt="Telefone"
+                        class="img-footer3"><span>Fale Conosco</span></a>
+            </div>
+ 
+            <div class="item-footer4">
+                <ul class="footer4">
+                    <li><a href="#" class="social-link"><span>Siga-nos</span><img src="img/originais/Instagram.png"
+                                alt="Instagram" class="img-instagram"></a></li>
+                    <li><a href="#" class="termos-condicoes">Termos &amp; Condições</a></li>
+                    <li> <a href="#" class="politica-privacidade">Política de Privacidade</a></li>
+                </ul>
+            </div>
+ 
+            <div class="item-footer5">
+                <a href="#header" class="voltar-topo">Voltar ao topo</a>
+            </div>
+        </div>
+        <p class="Copyright">Copyright © 2025 ”acolhercomafeto.com.br” Todos direitos reservados.</p>
+    </footer>
 
 </body>
 
