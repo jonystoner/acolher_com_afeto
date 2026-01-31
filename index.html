@@ -32,8 +32,9 @@
 
         <nav class="navegacao" aria-label="Navegação principal">
 
-            <button class="hamburger"></button>
-            <ul class="nav-link">
+            <button class="hamburger" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menu-principal"></button>
+            <ul class="nav-link" id="menu-principal">
                 <li><a href="/html/sobrenos.html" class="link">Sobre Nós</a></li>
                 <li><a href="#" class="link">Para Família</a></li>
                 <li><a href="#" class="link">Para Profissional</a></li>
@@ -43,7 +44,7 @@
         </nav>
 
         <button class="search-btn" id="search-btn">
-            <img src="img/lupa.gif" alt="Buscar">
+            <img src="img/lupa.gif" alt="Buscar" aria-hidden="true">
         </button>
 
         <form class="barra-de-busca" role="search" id="barra-de-busca">
@@ -51,7 +52,7 @@
                 Pesquisar no site
             </label>
 
-            <img src="img/lupa01.gif" alt="">
+            <img src="img/lupa01.gif" alt="lupa">
 
             <input type="search" id="pesquisar" name="pesquisar" placeholder="Pesquisar" class="pesquisar">
         </form>
@@ -60,11 +61,11 @@
 
     <main id="main-content" class="main-content">
 
-        <section id="conheca-loja" aria-labelledby="titulo-loja" class="section-loja">
+        <section id="conheca-loja" class="section-loja">
             <div class="conteudo-loja">
                 <a href="loja.html" class="btn-loja">Conheça nossa loja</a>
-                <img src="img/chamadaLoja.gif"
-                    alt="criança segurando uma parte de um quebra cabeça colorido" class="img-loja">
+                <img src="img/chamadaLoja.gif" alt="criança segurando uma parte de um quebra cabeça colorido"
+                    class="img-loja">
             </div>
         </section>
 
@@ -103,8 +104,7 @@
 
                 <article class="article-card">
                     <h3 class="sub-titulo">Psicopedagogia</h3>
-                    <img class="article-img" src="img/psicopedagogia.gif"
-                        alt="Psicopedagoga interagindo com crianças">
+                    <img class="article-img" src="img/psicopedagogia.gif" alt="Psicopedagoga interagindo com crianças">
                     <p class="card-pargrafo">O profissional cria estratégias personalizadas para melhorar o rendimento
                         escolar, desenvolver habilidades cognitivas e sociais, e fortalecer o vínculo da pessoa com o
                         aprendizado. O foco é promover a inclusão educativa e o desenvolvimento integral, de forma
@@ -113,8 +113,7 @@
 
                 <article class="article-card">
                     <h3 class="sub-titulo">Nutrição</h3>
-                    <img class="article-img" src="img/nutricao.gif"
-                        alt="Pratos com alimentos saudáveis e coloridos">
+                    <img class="article-img" src="img/nutricao.gif" alt="Pratos com alimentos saudáveis e coloridos">
                     <p class="card-pargrafo">A nutricionista auxilia pessoas com TEA a gerenciar a seletividade
                         alimentar e problemas gastrointestinais, comuns no espectro. Ela desenvolve planos alimentares
                         individualizados para garantir a ingestão adequada de nutrientes, promovendo a saúde geral e o
@@ -123,8 +122,7 @@
 
                 <article class="article-card">
                     <h3 class="sub-titulo">Psicoterapia</h3>
-                    <img class="article-img" src="img/psicoterapia.gif"
-                        alt="Psicoterapeuta auxiliando uma criança">
+                    <img class="article-img" src="img/psicoterapia.gif" alt="Psicoterapeuta auxiliando uma criança">
                     <p class="card-pargrafo">A Psicoterapia oferece suporte emocional e psicológico para crianças e
                         adolescentes, ajudando-os a lidar com desafios comportamentais, emocionais e sociais. São
                         utilizadas técnicas variadas, como a terapia cognitivo-comportamental, para promover o bem-estar
@@ -133,7 +131,7 @@
 
             </div>
 
-            <button type="submit" class="entre-contato">Entre em contato</button>
+            <button type="button" class="entre-contato">Entre em contato</button>
 
         </section>
 
@@ -149,12 +147,11 @@
                         <input type="email" placeholder="Email*" required>
                         <input type="tel" placeholder="Telefone*" required>
                     </div>
-
                     <textarea placeholder="Mensagem*" required></textarea>
 
                     <button type="submit">Enviar</button>
                 </form>
-                <span class="fechar">X</span>
+                <button class="fechar" aria-label="Fechar formulário">X</button>
             </div>
         </section>
 
@@ -165,7 +162,7 @@
         <div class="conteiner-footer">
 
             <div class="item-footer1">
-                <img src="img/logo.gif" alt="" class="img-footerlogo">
+                <img src="img/logo.gif" alt="imagem da logo" class="img-footerlogo" aria-hidden="true">
                 <p>Um site especializado em facilitar o dia a dia do autista e sua familia.</p>
             </div>
 
@@ -203,4 +200,5 @@
     </footer>
 
 </body>
+
 </html>
