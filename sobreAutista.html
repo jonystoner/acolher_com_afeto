@@ -5,9 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sobreAutista.css">
+    <link rel="stylesheet" href="style.css">
     <script defer src="sobreAutismo.js"></script>
+    <script defer src="script.js"></script>
     <title>Sobre o Autista</title>
 </head>
+<style>
+    /*familia*/
+
+banner-img2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.titulo {
+    padding: 20px;
+    font-size: 15px;
+    margin-top: 15px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.banner-img2 img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.secao1 {
+    background: linear-gradient(90deg, var(--VerdeClaro), var(--Azulsuave), var(--Branco));
+    ;
+    color: var(--Preto);
+    cursor: pointer;
+    padding: 10px;
+    width: 50%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ativado,
+.secao1:hover {
+    background-color: var(--Azulsuave);
+}
+
+.panel1 {
+    padding: 0 18px;
+    background-color: var(--CinzaClaro);
+    display: none;
+    overflow: hidden;
+
+}
+
+.secao1:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.secao1.active:after {
+    content: "\2212";
+}
+
+.main {
+    width: 100%;
+   
+}
+
+@media (max-width: 480px) {
+    .banner-img2 img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-img2 img {
+        height: 400px;
+    }
+}
+
+</style>
+
+
+
+
 
 <body>
 
@@ -15,7 +106,7 @@
     <header id="header" class="header">
 
         <a href="#" class="logo">
-            <img class="img-logo" src="img/Home/gif/logo.gif" alt="Logo acolher com afeto sem quebra cabeça">
+            <img class="img-logo" src="img/logo.gif" alt="Logo acolher com afeto sem quebra cabeça">
 
             <svg class="arco-svg" viewBox="0 0 200 110">
 
@@ -43,7 +134,7 @@
         </nav>
 
         <button class="search-btn" id="search-btn">
-            <img src="img/Home/originais/Search.jpg" alt="Buscar">
+            <img src="img/lupa.gif" alt="Buscar">
         </button>
 
         <form class="barra-de-busca" role="search" id="barra-de-busca">
@@ -51,7 +142,7 @@
                 Pesquisar no site
             </label>
 
-            <img src="img/originais/lupa1.gif" alt="">
+            <img src="img/lupa01.gif" alt="">
 
             <input type="search" id="pesquisar" name="pesquisar" placeholder="Pesquisar" class="pesquisar">
         </form>
@@ -61,7 +152,7 @@
     <main class="main">
         <section>
             <figure class="banner-img2">
-                <img src="img/familia/atualizadas/familiapag01.webp"
+                <img src="img/familiapag01.webp"
                     alt="criança autista brincando com blocos de montar">
             </figure>
 
@@ -188,15 +279,15 @@
             </div>
             <div class="item-footer3">
                 <h3>Precisa de suporte</h3>
-                <a href="#"><img src="img/Home/originais/Email.png" alt="Email"
+                <a href="#"><img src="img/Email.png" alt="Email"
                         class="img-footer3"><span>E-mail</span></a>
-                <a href="https://wa.me/5511958399497" target="_blank"><img src="img/Home/originais/Vector.png"
+                <a href="https://wa.me/5511958399497" target="_blank"><img src="img/Vector.png"
                         alt="Telefone" class="img-footer3"><span>Fale Conosco</span></a>
             </div>
 
             <div class="item-footer4">
                 <ul class="footer4">
-                    <li><a href="#" class="social-link"><span>Siga-nos</span><img src="img/Home/originais/Instagram.png"
+                    <li><a href="#" class="social-link"><span>Siga-nos</span><img src="img/Instagram.png"
                                 alt="Instagram" class="img-instagram"></a></li>
                     <li><a href="#" class="termos-condicoes">Termos &amp; Condições</a></li>
                     <li> <a href="#" class="politica-privacidade">Política de Privacidade</a></li>
