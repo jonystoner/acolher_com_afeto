@@ -36,10 +36,10 @@
                 aria-controls="menu-principal"></button>
             <ul class="nav-link" id="menu-principal">
                 <li><a href="/html/sobrenos.html" class="link">Sobre Nós</a></li>
-                <li><a href="#" class="link">Para Família</a></li>
-                <li><a href="#" class="link">Para Profissional</a></li>
+                <li><a href="/html/familia.html" class="link">Para Família</a></li>
+                <li><a href="/html/para_profissionais.html" class="link">Para Profissional</a></li>
                 <li><a href="#footer" class="link">Contato</a></li>
-                <li><a href="#" class="link">Loja</a></li>
+                <li><a href="/html/loja_responsivo.html" class="link">Loja</a></li>
             </ul>
         </nav>
 
@@ -58,23 +58,24 @@
         </form>
 
     </header>
-
-    <main id="main-content" class="main-content">
+    
+    <main id="main-content" class="main-content" tabindex="-1">
 
         <section id="conheca-loja" class="section-loja">
             <div class="conteudo-loja">
-                <a href="loja.html" class="btn-loja">Conheça nossa loja</a>
+                <a href="/html/loja_responsivo.html" class="btn-loja" aria-label="Acessar a loja de produtos do Acolher com Afeto">
+                        Conheça nossa loja</a>
                 <img src="img/chamadaLoja.gif" alt="criança segurando uma parte de um quebra cabeça colorido"
                     class="img-loja">
             </div>
         </section>
 
-        <section class="articles-section" id="articles">
+        <section class="articles-section" id="articles" >
             <h2 class="article-title">Fique por dentro das especialidades</h2>
 
             <div class="conteiner-cards">
 
-                <article class="article-card">
+                <article class="article-card" aria-labelledby="psicologia">
                     <h3 class="sub-titulo">Psicologia</h3>
                     <img class="article-img" src="img/psicologia.gif" alt="Psicóloga ajudando uma criança">
                     <p class="card-pargrafo">O psicólogo ajuda a pessoa com TEA a compreender e expressar suas emoções,
@@ -158,11 +159,11 @@
 
     </main>
 
-    <footer class="footer" id="footer">
+    <footer class="footer" id="footer" aria-label="Rodapé do site">
         <div class="conteiner-footer">
 
             <div class="item-footer1">
-                <img src="img/logo.gif" alt="imagem da logo" class="img-footerlogo" aria-hidden="true">
+                <img src="img/logo.gif" alt="" class="img-footerlogo" aria-hidden="true">
                 <p>Um site especializado em facilitar o dia a dia do autista e sua familia.</p>
             </div>
 
@@ -170,17 +171,25 @@
                 <h3>Mapa do site > </h3>
                 <ul class="mapa-site">
                     <li><a href="/html/sobrenos.html">Sobre Nós</a></li>
-                    <li><a href="#">Para Família</a></li>
-                    <li><a href="#">Para Profissional</a></li>
+                    <li><a href="/html/familia.html">Para Família</a></li>
+                    <li><a href="/html/para_profissionais.html">Para Profissional</a></li>
                     <li><a href="#footer">Contato</a></li>
-                    <li><a href="#">Loja</a></li>
+                    <li><a href="/html/loja_responsivo.html">Loja</a></li>
                 </ul>
             </div>
             <div class="item-footer3">
                 <h3>Precisa de suporte</h3>
-                <a href="#"><img src="img/Email.gif" alt="Email" class="img-footer3"><span>E-mail</span></a>
-                <a href="https://wa.me/5511958399497" target="_blank"><img src="img/telefone.gif" alt="Telefone"
-                        class="img-footer3"><span>Fale Conosco</span></a>
+                
+                <a href="#" aria-label="Enviar e-mail para suporte">
+                    <img src="img/Email.gif" alt="" class="img-footer3" aria-hidden="true">
+                    <span>E-mail</span>
+                </a>
+
+                <a href="https://wa.me/5511958399497" target="_blank" aria-label="Enviar mensagem para suporte no whatsapp">
+                    <img src="img/telefone.gif" alt="Telefone" class="img-footer3" aria-hidden="true">
+                        <span>Fale Conosco</span>
+                </a>
+
             </div>
 
             <div class="item-footer4">
@@ -193,7 +202,7 @@
             </div>
 
             <div class="item-footer5">
-                <a href="#header" class="voltar-topo">Voltar ao topo</a>
+                <a href="#header" class="voltar-topo" aria-label="Voltar ao início da página">Voltar ao topo</a>
             </div>
         </div>
         <p class="Copyright">Copyright © 2025 ”acolhercomafeto.com.br” Todos direitos reservados.</p>

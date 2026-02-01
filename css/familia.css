@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    /* remove marcadores */
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Movimento do scroll - dixa mais suave*/
+}
+
+/* --- CORES PADRÃO --- */
+:root {
+    --Azulsuave: #6FA8DC;
+    --VerdeClaro: #A8E6CF;
+    --AmareloPastel: #FFF3B0;
+    --LilasSuave: #CBAACB;
+    --CinzaClaro: #F5F5F5;
+    --Azulescuro: #2E4A62;
+    --Preto: #000000;
+    --Verdeescuro: #0AF79F;
+    --Azul: #1976CB;
+    --Azulmedio: #7AC0D3;
+    --Branco: #ffffff;
+
+}
+
+body {
+    background-color: var(--CinzaClaro);
+    color: var(--Preto);
+}
+/* 
+.sessao1 {
+    margin-top: 50px;
+} */
+
+.banner-img {
+    width: 100%;
+    margin: 0;
+}
+
+.banner-img img {
+    width: 100%;
+    height: auto;
+    /* mantém proporção */
+    display: block;
+    /* remove espaços extras */
+}
+
+/* CONTAINER GERAL */
+.conteiner_familia {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 40px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* CARD */
+.card_familia {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-radius: 16px;
+    margin: 10px 100px;
+}
+
+/* IMAGEM */
+.card_familia img {
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+/* CONTEÚDO */
+.card_familia div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* TÍTULO */
+.card_familia h2 {
+    font-size: 30px;
+    color: #000;
+    margin: 0;
+    font-weight: normal;
+
+}
+
+/* TEXTO */
+.card_familia p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* BOTÃO */
+.saiba-mais {
+    width: fit-content;
+    padding: 15px 20px;
+
+    background-color: var(--Azulmedio);
+    color: var(--Preto);
+    font-size: 18px;
+    font-weight: 600;
+
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* HOVER BOTÃO */
+.saiba-mais:hover {
+    background-color: var(--LilasSuave);
+    transform: scale(1.05);
+}
+
+/* Hora do Brincar juntos */
+.hora-brincar {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-radius: 30px;
+    margin: 80px 150px;
+
+    div {
+        background-color: var(--VerdeClaro);
+        width: auto;
+        height: 260px;
+        border-radius: 30px 0 0 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+
+    }
+
+    div h2 {
+        font-weight: normal;
+        font-size: 35px;
+        margin-top: -50px;
+        margin-right: 200px;
+    }
+
+    div p {
+         margin: 15px 120px;
+         font-size: 20px;
+    }
+    .p2 {
+        font-size: 15px;
+    }
+}
+
+/* Fale com a gente */
+
+.secao3-img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* desktop */
+    /* gap: 10px; */
+    width: 100%;
+    position: relative;
+    z-index: 1;  /* imagens ficam no fundo */
+
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    /* película branca */
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(255, 255, 255, 0.65);
+        pointer-events: none;
+    }
+}
+
+.secao3 {
+    position: relative; /* cria contexto */
+}
+
+/* texto por cima */
+.secao3-texto {
+    position: absolute;
+    inset: 0;               /* ocupa toda a área */
+    z-index: 2;             /* fica acima das imagens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 50px;
+
+    h2 {
+        font-size: 36px;
+        font-weight: normal;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+.fale-gente {
+    font-size: 24px;
+    background-color: var(--Azulmedio);
+    padding: 15px 30px;
+    color: var(--Preto);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.contato-overlay {
+    position: fixed;
+    inset: 0;
+    padding: 40px 20px;
+    display: none; /* escondido */
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;  
+}
+
+/* quando ativo */
+.contato-overlay.ativo {
+    display: flex;
+}
+
+/* título */
+.contato-overlay h2 {
+    color: var(--Azulsuave);
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+/* caixa branca */
+.contato-box {
+    position: relative;
+    background-color: var(--Branco);
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    border-radius: 16px;
+    border: 2px solid var(--Azulsuave);
+}
+
+/* formulário */
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* inputs */
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 1.8px solid var(--Azulsuave);
+    font-size: 16px;
+    
+}
+
+/* textarea */
+.form-contato textarea {
+    min-height: 160px;
+    resize: none;
+}
+
+/* linha email + telefone */
+.linha {
+    display: flex;
+    gap: 15px;
+}
+
+.linha input {
+    flex: 1;
+}
+
+/* botão */
+.form-contato button {
+    align-self: center;
+    padding: 14px 40px;
+    border-radius: 18px;
+    background-color: var(--VerdeClaro);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* botão hover */
+.form-contato button:hover {
+    background-color: var(--Verdeescuro);
+}
+
+/* botão fechar */
+.fechar {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    cursor: pointer;
+}
+

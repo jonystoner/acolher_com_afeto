@@ -274,220 +274,233 @@ body {
     }
 
     .title-text {
-    padding: 0 30px 60px 30px;
-    gap: 25px;
+        padding: 0 30px 60px 30px;
+        gap: 25px;
 
-    h2 {
-        font-size: 24px;
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 15px;
+        }
     }
 
-    p {
-        font-size: 15px;
+    .sobrenos02 {
+        gap: 20px;
     }
-}
 
-.sobrenos02 {
-    gap: 20px;
-}
     .visao {
-    gap: 20px;
-}
-
-.visao h3 {
-    font-size: 18px;
-}
-
-.visao p {
-    font-size: 15px;
-}
-
-.sobrenos03 {
-    padding: 25px 20px;
-    gap: 25px;
-}
-
-.titulo-texto {
-    gap: 20px;
-
-    h2 {
-        font-size: 20px;
+        gap: 20px;
     }
 
-    h3 {
+    .visao h3 {
         font-size: 18px;
     }
 
-    p {
+    .visao p {
         font-size: 15px;
     }
-}
 
-.sobrenos04 {
-    padding: 50px;
-}
+    .sobrenos03 {
+        padding: 25px 20px;
+        gap: 25px;
+    }
 
-.sobrenos04 h2 {
-    font-size: 30px;
-}
+    .titulo-texto {
+        gap: 20px;
 
-.contato-caixa {
-    width: 60%;
-}
+        h2 {
+            font-size: 20px;
+        }
 
-.contato input {
-    font-size: 15px;
-}
+        h3 {
+            font-size: 18px;
+        }
 
-.contato textarea {
-    font-size: 15px;
+        p {
+            font-size: 15px;
+        }
+    }
 
-}
+    .sobrenos04 {
+        padding: 50px;
+    }
 
-.contato button {
-    font-size: 15px;
-}
+    .sobrenos04 h2 {
+        font-size: 30px;
+    }
+
+    .contato-caixa {
+        width: 60%;
+    }
+
+    .contato input {
+        font-size: 15px;
+    }
+
+    .contato textarea {
+        font-size: 15px;
+
+    }
+
+    .contato button {
+        font-size: 15px;
+    }
 
 }
 
 @media (min-width: 999px) {
+
+    .img-text img {
+        height: 20rem;
+    }
+
     .img-text h1 {
         font-size: 20px;
     }
 
     .title-text {
-    h2 {
-        font-size: 26px;
+        h2 {
+            font-size: 26px;
+        }
+
+        p {
+            font-size: 18px;
+        }
     }
 
-    p {
-        font-size: 18px;
-    }
-}
-
-.sobrenos02 {
-    gap: 30px;
-    padding: 25px 50px;
-}
-
-.visao h3 {
-    font-size: 20px;
-}
-
-.visao p {
-    font-size: 18px;
-}
-
-.sobrenos03 {
-    padding: 50px 0 50px 50px;
-    gap: 20px;
-    flex-direction: row;
-}
-
-.titulo-texto {
-    width: 80%;
-    h2 {
-        font-size: 26px;
+    .sobrenos02 {
+        gap: 30px;
+        padding: 25px 50px;
     }
 
-    h3 {
+    .visao h3 {
         font-size: 20px;
     }
 
-    p {
+    .visao p {
         font-size: 18px;
     }
-}
 
-.fotos {
-    padding: 0;
-    gap: 30px;
-}
+    .sobrenos03 {
+        padding: 50px 0 50px 50px;
+        gap: 20px;
+        flex-direction: row;
+    }
 
-.sobrenos04 h2 {
-    font-size: 35px;
-}
+    .titulo-texto {
+        width: 80%;
 
-.contato-caixa {
-    width: 60%;
-}
+        h2 {
+            font-size: 26px;
+        }
 
-.contato input {
-    font-size: 18px;
-}
+        h3 {
+            font-size: 20px;
+        }
 
-.contato textarea {
-    font-size: 18px;
+        p {
+            font-size: 18px;
+        }
+    }
 
-}
+    .fotos {
+        padding: 0;
+        gap: 30px;
+    }
 
-.contato button {
-    font-size: 18px;
-}
+    .sobrenos04 h2 {
+        font-size: 35px;
+    }
+
+    .contato-caixa {
+        width: 60%;
+    }
+
+    .contato input {
+        font-size: 18px;
+    }
+
+    .contato textarea {
+        font-size: 18px;
+
+    }
+
+    .contato button {
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 1250px) {
+    
+     .img-text img {
+        height: 35rem;
+    }
+
     .img-text h1 {
         font-size: 25px;
     }
 
     .title-text {
-    h2 {
-        font-size: 35px;
+        h2 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 20px;
+        }
     }
 
-    p {
-        font-size: 20px;
-    }
-}
-
-.visao h3 {
-    font-size: 25px;
-}
-
-.visao p {
-    font-size: 20px;
-}
-
-/* vai pegar */
-.sobrenos03 {
-    padding: 50px 0 50px 50px;
-    gap: 20px;
-    flex-direction: row;
-}
-
-.titulo-texto {
-    width: 80%;
-    h2 {
-        font-size: 35px;
-    }
-
-    h3 {
+    .visao h3 {
         font-size: 25px;
     }
 
-    p {
+    .visao p {
         font-size: 20px;
     }
-}
 
-.sobrenos04 h2 {
-    font-size: 40px;
-}
+    /* vai pegar */
+    .sobrenos03 {
+        padding: 50px 0 50px 50px;
+        gap: 20px;
+        flex-direction: row;
+    }
 
-.contato-caixa {
-    width: 50%;
-}
+    .titulo-texto {
+        width: 80%;
 
-.contato input {
-    font-size: 20px;
-}
+        h2 {
+            font-size: 35px;
+        }
 
-.contato textarea {
-    font-size: 20px;
+        h3 {
+            font-size: 25px;
+        }
 
-}
+        p {
+            font-size: 20px;
+        }
+    }
 
-.contato button {
-    font-size: 20px;
-}
+    .sobrenos04 h2 {
+        font-size: 40px;
+    }
+
+    .contato-caixa {
+        width: 50%;
+    }
+
+    .contato input {
+        font-size: 20px;
+    }
+
+    .contato textarea {
+        font-size: 20px;
+
+    }
+
+    .contato button {
+        font-size: 20px;
+    }
 }

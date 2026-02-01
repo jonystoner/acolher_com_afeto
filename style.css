@@ -5,13 +5,17 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    outline: none;
     border: none;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+
+    :focus-visible {
+        outline: 3px solid var(--Azul);
+        outline-offset: 3px;
+    }
 }
 
-html {
+html {  
     scroll-behavior: smooth;
 }
 
@@ -276,14 +280,15 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3px;
-    
+
     li a {
         color: var(--Preto);
     }
+
     li a:hover {
-    color: var(--Azulsuave);
-    text-decoration: underline;
-}
+        color: var(--Azulsuave);
+        text-decoration: underline;
+    }
 }
 
 .img-footer3 {

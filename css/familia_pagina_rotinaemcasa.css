@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com');
+
+/* Reset básico e definição da fonte */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main {
+    width: 100% ;
+    background-color: #fff;
+    
+}
+
+/* navegação das páginas */
+nav p {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* img{
+    width: 100%;
+    height: auto;
+} */
+.familia-navegacao-das-paginas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* imagem (responsivo) */
+.banner-familia-e-rotina img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+}
+
+
+h1 {
+    font-size: 20px;
+    color: #0056b3; /* Cor primária para destaque */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card-organizacao-e-rotina p{
+    font-size: 15px;
+    color: #000000;
+}
+
+.cards-organizacao-e-rotina {
+    padding: 20px;
+    max-width: 1200px; /* Evita que o conteúdo estique demais em telas ultra-wide */
+    margin: 0 auto;
+}
+
+.card-organizacao-e-rotina   {
+ display: flex;          /* Ativa o modo lado a lado */
+ align-items: center; /* Alinha imagem e texto verticalmente ao centro */
+ gap: 30px;
+ margin-top: 20px;
+ flex-direction: row;  /* Itens lado a lado */
+}
+
+/*imagem responsiva dentro do card*/
+.card-organizacao-e-rotina img {
+     flex: 1;            /* Ocupa uma parte proporcional */
+    width: 100%;        /* Garante que use o espaço do flex */
+    max-width: 450px;   /* Limite de tamanho para não ficar gigante no Desktop */
+    height: auto;       /* NUNCA use altura fixa se quiser responsividade */
+    border-radius: 10px;
+    object-fit: cover;
+}   
+
+
+/* MEDIA QUERY: Celulares e Tablets em modo retrato */
+@media (max-width: 768px) {
+    .card-organizacao-e-rotina {
+        flex-direction: column; /* Empilha um em cima do outro */
+        text-align: center;     /* Centraliza o texto no mobile */
+    }
+
+    .card-organizacao-e-rotina img {
+        max-width: 100%;        /* Imagem ocupa a largura total disponível */
+    }
+
+    .card-organizacao-e-rotina p {
+        margin-top: 15px;      /* Espaço entre imagem e texto */
+        flex: 1;
+    }
+}
+/* MEDIA QUERY: Telas muito grandes */
+@media (min-width: 1200px) {
+    .familia-navegacao-das-paginas {
+        padding: 40px;
+    }
+}
