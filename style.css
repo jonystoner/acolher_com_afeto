@@ -197,6 +197,11 @@ body {
     height: auto;
 }
 
+.barra-de-busca img {
+    width: auto;
+    height: auto;
+}
+
 .barra-de-busca.active {
     max-height: 60px;
     opacity: 1;
@@ -292,8 +297,8 @@ body {
 }
 
 .img-footer3 {
-    height: 15PX;
-    margin-right: 3px;
+    height: auto;
+    width: auto;
 }
 
 .item-footer3 a {
@@ -308,6 +313,7 @@ body {
 
 .item-footer3 {
     width: 100%;
+    height: auto;
 }
 
 .item-footer4 {

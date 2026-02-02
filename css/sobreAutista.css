@@ -68,7 +68,6 @@ banner-img2 img {
 
 .secao1 {
     background: linear-gradient(90deg, var(--VerdeClaro), var(--Azulsuave), var(--Branco));
-    ;
     color: var(--Preto);
     cursor: pointer;
     padding: 10px;
@@ -80,33 +79,38 @@ banner-img2 img {
     border-radius: 10px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.active,
-.secao1:hover {
+.secao1:hover,
+.secao1.active {
     background-color: var(--Azulsuave);
 }
 
-.panel1 {
+/* PAINEL ESCONDIDO */
+.painel1 {
     padding: 0 18px;
     background-color: var(--CinzaClaro);
     display: none;
     overflow: hidden;
-
 }
 
-.secao1:after {
-    content: '\002B';
+/* PAINEL VISÍVEL */
+.painel1.active {
+    display: block;
+}
+
+.secao1::after {
+    content: '+';
     color: #777;
     font-weight: bold;
-    float: right;
-    margin-left: 10px;
     font-size: 20px;
 }
 
-.secao1.active:after {
-    content: "\2212";
+.secao1.active::after {
+    content: '−';
 }
+
 
 .main {
     width: 100%;
