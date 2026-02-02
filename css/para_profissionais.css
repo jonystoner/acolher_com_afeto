@@ -26,10 +26,6 @@ h1 {
     border-radius: 10px;
 }
 
-img {
-    width: 100%;
-}
-
 header {
     width: 100%;
     background-color: #f8f8f8;
@@ -126,8 +122,8 @@ header {
 
 /* Logo */
 .logo img {
-    height: 50px;
-    width: auto;
+    height: auto;
+    width: 20%;
 }
 
 /* Barra de pesquisa */
@@ -769,7 +765,7 @@ RESPONSIVO
     }
 
     .voltar-topo {
-        display: inline-block;
+        display: flex;
         margin-top: 15px;
     }
 }
