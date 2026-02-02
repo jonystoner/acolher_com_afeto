@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Para familia</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-
+    <title>Home</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-custom h-auto">
         <div id="testes" class="container-fluid px-4">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="img/logo.gif" alt="Logo Acolher com Afeto" width="100" height="auto" class="me-2">
+                <img src="img/03-logo-100px.webp" alt="Logo Acolher com Afeto" width="50" height="auto" class="me-2">
             </a>
 
 
@@ -26,19 +26,15 @@
             <div class="collapse navbar-collapse justify-content-center">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#">Sobre nós</a></li>
-                    <li class="nav-item"><a class="nav-link" href="para_familia.html">Para Família</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Para Profissionais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/familia.html">Para Família</a></li>
+                    <li class="nav-item"><a class="nav-link" href="para_profissionais.html">Para Profissionais</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
                     <li class="nav-item"><a class="nav-link" href="loja_responsivo.html">Loja</a></li>
-                    <button type="button" class="btn btn-primary" id="abrirModalBtn">
-                        Cadatre-se
-                    </button>
                 </ul>
             </div>
 
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
         </div>
     </nav>
@@ -46,83 +42,120 @@
         <div class="container">
             <h1>O que é autismo?</h1>
             <p class="mt-3 fs-5">Entenda o Transtorno do Espectro Autista (TEA)</p>
-            <img src="img\familia-banner-sobreoautismo-1200.webp" alt="Fita do Autismo" class="img-fluid my-3"
-                width="1200">
+            <img src="img/ai-generated-8489713_640.png" alt="Fita do Autismo" class="img-fluid my-3 w-75 h-auto">
             <br>
             <button class="btn-saiba-mais">Saiba mais</button>
         </div>
     </section>
-    <section class="loja">
-        <div class="container" id="">
+    <section class="loja text-center">
+        <div class="container">
             <h2 class="fw-bold mb-4 text-dark">Conheça nossa Loja</h2>
-            <img src="img\chamada-para-loja-400.webp" alt="Ilustração loja" class="img-fluid mb-3 rounded-2">
-            <br>
-            <button class="btn-loja">Acessar Loja</button>
-        </div>
-    </section>
-
-
-    <section class="especialidades">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-5">Fique por dentro das especialidades</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-3 mb-4">
-                    <div id="cards" class="card p-3">
-                        <img src="psicologia.jpg" class="card-img-top rounded-4 mb-2" alt="Psicologia">
-                        <h5 class="card-title">Psicologia</h5>
-                        <p class="card-text">O psicólogo apoia a pessoa com TEA e a família no desenvolvimento emocional
-                            e social.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mb-4">
-                    <div class="card p-3">
-                        <img src="terapia.jpg" class="card-img-top rounded-4 mb-2" alt="Terapia Ocupacional">
-                        <h5 class="card-title">Terapia Ocupacional</h5>
-                        <p class="card-text">A terapia ocupacional trabalha habilidades motoras e cognitivas de forma
-                            lúdica e funcional.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3 mb-4">
-                    <div class="card p-3">
-                        <img src="img/img1.png" class="card-img-top rounded-4 mb-2" alt="Fonoaudiologia">
-                        <h5 class="card-title">Fonoaudiologia</h5>
-                        <p class="card-text">O fonoaudiólogo atua no desenvolvimento da comunicação verbal e não verbal.
-                            fonoaudiólogo atua no desenvolvimento da comunicação verbal e não verbal.
-                            fonoaudiólogo atua no desenvolvimento da comunicação verbal e não verbal.
-                            fonoaudiólogo atua no desenvolvimento da comunicação verbal e não verbal.
-
-
-                        </p>
-                    </div>
-                </div>
+            <div class="d-flex flex-column align-items-center">
+                <a class="btn-loja mb-3" href="loja_responsivo.html">Acessar Loja</a>
+                <img src="img/chamadaLoja.gif" alt="Ilustração loja" class="img-fluid rounded-2">
             </div>
         </div>
     </section>
 
+
+    <section class="articles-section" id="articles">
+        <h2 class="article-title">Fique por dentro das especialidades</h2>
+
+        <div class="conteiner-cards">
+
+            <article class="article-card">
+                <h3 class="sub-titulo">Psicologia</h3>
+                <img class="article-img w-75" src="img/psicologia.gif" alt="Psicóloga ajudando uma criança">
+                <p class="card-pargrafo">O psicólogo ajuda a pessoa com TEA a compreender e expressar suas emoções,
+                    a lidar com a ansiedade e a construir interações mais eficazes, sempre respeitando a
+                    neurodiversidade. O tratamento é individualizado e visa promover a autonomia e a qualidade de
+                    vida.</p>
+            </article>
+
+            <article class="article-card">
+                <h3 class="sub-titulo">Terapia Ocupacional</h3>
+                <img class="article-img" src="img/terapiaocupacional.gif"
+                    alt="Terapeuta auxiliando uma criança em atividades motoras">
+                <p class="card-pargrafo">A Terapia Ocupacional (TO) atua com o Transtorno do Espectro Autista (TEA)
+                    de forma a promover a autonomia e a independência do indivíduo, capacitando-o a participar das
+                    atividades do dia a dia. A intervenção não se restringe à infância, estendendo-se à adolescência
+                    e à vida adulta.</p>
+            </article>
+
+            <article class="article-card">
+                <h3 class="sub-titulo">Fonoaudiologia</h3>
+                <img class="article-img" src="img/fonoaudiologia.gif"
+                    alt="Fonoaudióloga ajudando criança com atividades de fala">
+                <p class="card-pargrafo">O profissional atua na melhora da articulação, fluência, além de estimular
+                    a comunicação de forma funcional. O foco é proporcionar maior autonomia e interação, respeitando
+                    a neurodiversidade de cada indivíduo.</p>
+            </article>
+
+            <article class="article-card">
+                <h3 class="sub-titulo">Psicopedagogia</h3>
+                <img class="article-img" src="img/psicopedagogia.gif" alt="Psicopedagoga interagindo com crianças">
+                <p class="card-pargrafo">O profissional cria estratégias personalizadas para melhorar o rendimento
+                    escolar, desenvolver habilidades cognitivas e sociais, e fortalecer o vínculo da pessoa com o
+                    aprendizado. O foco é promover a inclusão educativa e o desenvolvimento integral, de forma
+                    lúdica e funcional.</p>
+            </article>
+
+            <article class="article-card">
+                <h3 class="sub-titulo">Nutrição</h3>
+                <img class="article-img" src="img/nutricao.gif" alt="Pratos com alimentos saudáveis e coloridos">
+                <p class="card-pargrafo">A nutricionista auxilia pessoas com TEA a gerenciar a seletividade
+                    alimentar e problemas gastrointestinais, comuns no espectro. Ela desenvolve planos alimentares
+                    individualizados para garantir a ingestão adequada de nutrientes, promovendo a saúde geral e o
+                    bem-estar. A intervenção nutricional contribui para o suporte neurológico.</p>
+            </article>
+
+            <article class="article-card">
+                <h3 class="sub-titulo">Psicoterapia</h3>
+                <img class="article-img" src="img/psicoterapia.gif" alt="Psicoterapeuta auxiliando uma criança">
+                <p class="card-pargrafo">A Psicoterapia oferece suporte emocional e psicológico para crianças e
+                    adolescentes, ajudando-os a lidar com desafios comportamentais, emocionais e sociais. São
+                    utilizadas técnicas variadas, como a terapia cognitivo-comportamental, para promover o bem-estar
+                    mental e o desenvolvimento saudável dos pacientes.</p>
+            </article>
+
+        </div>
+
+        <button id="abrirModalBtn" type="button" class="entre-contato">Entre em contato</button>
+
+    </section>
+
+  
+
     <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog w-100 modal-dialog-centered ">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title" id="tituloModal">Login</h1>
-                    <h5>Por favor insira seu e-mail e senha</h5>
+                    <h1 class="modal-title" id="tituloModal"></h1>
+                    <h5>Por favor insira seus dados para entrarmos em contato </h5>
 
                 </div>
                 <div class="modal-body">
                     <div class="mb-3 text-start">
-                        <label for="nomeInput" class="form-label"></label>
-                        <input type="text" class="form-control" id="nomeInput" placeholder="E-mail">
+                        <label for="nomeInput" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nomeInput" placeholder="Seu nome" >
                     </div>
                     <div class="mb-3 text-start">
-                        <label for="nomeInput" class="form-label"></label>
-                        <input type="password" class="form-control" id="password" placeholder="senha">
+                        <label for="email" class="form-label"></label>
+                        <input type="email" class="form-control" id="email" placeholder="informe o email">
                     </div>
-                    
+                        <div class="mb-3 text-start">
+                        <label for="phone" class="form-label"></label>
+                        <input type="text" class="form-control" id="phone" placeholder="informe seu telefone">
+                    </div>
+                        <div class="mb-3 text-start">
+                        <label for="mensagem" class="form-label"></label>
+                        <input type="text" class="form-control" id="mensagem" placeholder="informe sua mensagen">
+                    </div>
+
                     <button type="button" class="btn-login">Login</button>
                 </div>
                 <div class="count">
-                    <a>
+                    <a class="text-bg-dark">
                         Cliente novo ? <a href="#"> criar uma conta</a>
                     </a>
                 </div>
@@ -130,47 +163,57 @@
         </div>
     </div>
 
-    <div class="footer" id="footer">
+   <footer class="footer" id="footer" aria-label="Rodapé do site">
         <div class="conteiner-footer">
 
             <div class="item-footer1">
-                <img src="img/originais/logo.png" alt="" class="img-footerlogo">
+                <img src="img/03-logo-100px.webp" alt="" class="img-footerlogo" aria-hidden="true">
                 <p>Um site especializado em facilitar o dia a dia do autista e sua familia.</p>
             </div>
 
             <div class="item-footer2">
                 <h3>Mapa do site > </h3>
                 <ul class="mapa-site">
-                    <li>Sobre Nós</li>
-                    <li>Para a Família</li>
-                    <li>Para Profissional</li>
-                    <li>Contatos</li>
-                    <li>Loja</li>
+                    <li><a href="/html/sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="/html/familia.html">Para Família</a></li>
+                    <li><a href="/html/para_profissionais.html">Para Profissional</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                    <li><a href="/html/loja_responsivo.html">Loja</a></li>
                 </ul>
-            </div>
-            <div class="item-footer3">
-                <h3>Precisa de suporte</h3>
-                <span>E-mail</span></a>
-                <a href="https://wa.me/5511958399497" target="_blank"><img src="img/originais/Vector.png" alt="Telefone"
-                        class="img-footer3"><span>Fale Conosco</span></a>
-            </div>
+                </div>
+                <div class="item-footer3">
+                    <h3>Precisa de suporte</h3>
+                    
+                    <a href="#" aria-label="Enviar e-mail para suporte">
+                        <img src="img/Email.gif" alt="" class="img-footer3" aria-hidden="true">
+                        <span>E-mail</span>
+                    </a>
 
-            <div class="item-footer4">
-                <ul class="footer4">
-                    <li><a href="#" class="social-link"><span>Siga-nos</span><img src="img/originais/Instagram.png"
-                                alt="Instagram" class="img-instagram"></a></li>
-                    <li><a href="#" class="termos-condicoes">Termos &amp; Condições</a></li>
-                    <li> <a href="#" class="politica-privacidade">Política de Privacidade</a></li>
-                </ul>
-            </div>
+                    <a href="https://wa.me/5511958399497" target="_blank" aria-label="Enviar mensagem para suporte no whatsapp">
+                        <img src="img/telefone.gif" alt="Telefone" class="img-footer3" aria-hidden="true">
+                            <span>Fale Conosco</span>
+                    </a>
 
-            <div class="item-footer5">
-                <a href="#testes" class="voltar-topo">Voltar ao topo</a>
-            </div>
-        </div>
-        <p class="Copyright">Copyright © 2025”acolhercomafeto.com.br Todos direitos reservados.</p>
-    </div>
+                </div>
 
+                <div class="item-footer4">
+                    <ul class="footer4">
+                        <li><a href="#" class="social-link"><span>Siga-nos</span><img src="img/Instagram.gif"
+                                    alt="Instagram" class="img-instagram"></a></li>
+                        <li><a href="#" class="termos-condicoes">Termos &amp; Condições</a></li>
+                        <li> <a href="#" class="politica-privacidade">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="item-footer5">
+                    <a href="#testes" class="voltar-topo" aria-label="Voltar ao início da página">Voltar ao topo</a>
+                </div>
+            </div>
+            <p class="Copyright">Copyright © 2025 ”acolhercomafeto.com.br” Todos direitos reservados.</p>
+        </footer>
+
+
+        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 

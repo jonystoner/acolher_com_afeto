@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Sobre o Autista</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/03-logo-100px.webp" alt="Logo Acolher com Afeto" width="50" class="me-2" />
+        <span class="fw-bold text-primary">Acolher com Afeto</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Sobre nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="/familia.html">Para Família</a></li>
+          <li class="nav-item"><a class="nav-link" href="para_profissionais.html">Para Profissionais</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contatos</a></li>
+          <li class="nav-item"><a class="nav-link" href="loja_responsivo.html">Loja</a></li>
+        </ul>
+      </div>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
+        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="py-5">
+    <section class="text-center mb-5">
+      <div class="container">
+        <img src="img/familiapg01.webp" alt="Fita do Autismo" class="img-fluid rounded shadow-sm mb-4" />
+        <h1 class="fw-bold mb-4">Autismo: tudo o que você precisa saber sobre o Transtorno do Espectro Autista (TEA)</h1>
+
+        <p class="text-justify">
+          O Transtorno do Espectro Autista (TEA), conhecido popularmente como autismo, é uma condição do neurodesenvolvimento que acompanha o indivíduo por toda a vida...
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTEÚDO EM ACORDION -->
+    <div class="container">
+      <div class="accordion" id="accordionAutismo">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading1">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+              Como o autismo é classificado?
+            </button>
+          </h2>
+          <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionAutismo">
+            <div class="accordion-body">
+              <p>Desde o DSM-5, os quadros relacionados ao espectro autista passaram a ser reunidos sob o nome Transtorno do Espectro Autista...</p>
+              <ul>
+                <li><strong>Nível 1:</strong> necessita de suporte leve;</li>
+                <li><strong>Nível 2:</strong> necessita de suporte moderado;</li>
+                <li><strong>Nível 3:</strong> necessita de suporte intenso.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+              Quais são os sinais do autismo?
+            </button>
+          </h2>
+          <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionAutismo">
+            <div class="accordion-body">
+              <p>Os sinais de autismo costumam aparecer nos primeiros anos de vida...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+              E os mitos sobre autismo?
+            </button>
+          </h2>
+          <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionAutismo">
+            <div class="accordion-body">
+              <ul>
+                <li>Não, vacinas não causam autismo;</li>
+                <li>Não, autismo não é causado por falta de amor;</li>
+                <li>Não, autistas não são todos iguais;</li>
+                <li>Não, autismo não é falta de empatia;</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+              Conclusão: autismo é sobre escuta, respeito e potencial
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionAutismo">
+            <div class="accordion-body">
+              <p>Falar sobre o que é autismo é mais do que explicar um transtorno. É abrir espaço para escutar vidas...</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light pt-5 mt-5">
+    <div class="container">
+      <div class="row gy-4">
+
+        <div class="col-md-3 text-center text-md-start">
+          <img src="/img/logo.gif" alt="Logo" width="80" class="mb-2" />
+          <p>Um site especializado em facilitar o dia a dia do autista e sua família.</p>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Mapa do site</h5>
+          <ul class="list-unstyled">
+            <li><a href="/html/sobrenos.html" class="text-light text-decoration-none">Sobre Nós</a></li>
+            <li><a href="/html/familia.html" class="text-light text-decoration-none">Para Família</a></li>
+            <li><a href="/html/para_profissionais.html" class="text-light text-decoration-none">Para Profissional</a></li>
+            <li><a href="#footer" class="text-light text-decoration-none">Contato</a></li>
+            <li><a href="/html/loja_responsivo.html" class="text-light text-decoration-none">Loja</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Precisa de suporte</h5>
+          <p><a href="mailto:suporte@acolhercomafeto.com.br" class="text-light text-decoration-none">E-mail</a></p>
+          <p><a href="https://wa.me/5511958399497" target="_blank" class="text-light text-decoration-none">WhatsApp</a></p>
+        </div>
+
+        <div class="col-md-3">
+          <h5>Siga-nos</h5>
+          <a href="#" class="text-light text-decoration-none d-block mb-2">Instagram</a>
+          <a href="#" class="text-light text-decoration-none d-block mb-2">Termos & Condições</a>
+          <a href="#" class="text-light text-decoration-none d-block">Política de Privacidade</a>
+        </div>
+      </div>
+
+      <div class="text-center mt-4 border-top border-secondary pt-3">
+        <p class="mb-0 small">Copyright © 2025 acolhercomafeto.com.br — Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

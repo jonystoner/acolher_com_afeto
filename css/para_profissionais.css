@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .navbar-custom {
     background: linear-gradient(to right, #A8E6CF, #6FA8DC, #A8E6CF, #6FA8DC);
     height: 75px;
@@ -20,6 +21,7 @@ h1 {
     flex-direction: row;
     font-size: xx-large;
 }
+
 .form-control {
     border-radius: 10px;
 }
@@ -476,152 +478,315 @@ RESPONSIVO
 }
 
 .Banner {
-    display: flex;
-    flex-direction: row;
-    margin-top: 35px;
-   
+    width: 100%;
+    padding: 60px 0;
+    margin-top: 20px;
 }
 
 
-.banner-ajuste{
-    display: flex;
-    flex-direction: row;
-    
+.banner-container {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  align-items: center;
+  max-width: 100%;
+  margin-top: 25px;  
+  flex-wrap: wrap;
+
 }
 
-.container {
-    gap: 20px;
-    display: flex;
-    flex-direction: row;
-    margin-top:  40px;
+
+
+.banner-text h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 25px;
 }
 
-
-footer {
-    border-top: solid 3px rgb(47, 78, 48);
+.btn-principal {
+  background-color: #a8e6cf;
+  color: #000;
+  font-weight: 500;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.conteiner-footer {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    padding: 30px 55px 30px;
-    background: linear-gradient(180deg,
-            color-mix(in srgb, var(--VerdeClaro) 25%, var(--CinzaClaro)),
-            color-mix(in srgb, var(--Azulsuave) 25%, var(--CinzaClaro)));
-    font-size: 16px;
+.btn-principal:hover {
+  background-color: #92d8be;
+}
 
+.banner-image img {
+  width: 650px;
+  border-radius: 10px;
+}
+
+/* --- Blocos de conteúdo --- */
+.conteudo {
+  max-width: 1100px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.bloco {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.bloco.inverso {
+  flex-direction: row-reverse;
+}
+
+.bloco img {
+  width: 45%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.texto {
+  flex: 1;
+}
+
+.texto h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.texto p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn-secundario {
+  background-color: #6fa8dc;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secundario:hover {
+  background-color: #5c93c5;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+  .banner-container, .bloco, .bloco.inverso {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-image img, .bloco img {
+    width: 100%;
+  }
+
+  .banner-text h1 {
+    font-size: 1.8rem;
+  }
+}
+
+    /* Footer */
+
+    .img-footerlogo {
+        width: 110px;
+    }
+
+    .conteiner-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        /* centraliza horizontalmente */
+        text-align: center;
+        /* centraliza textos */
+        padding: 15px 25px 10px;
+    }
+
+    .img-footerlogo {
+        width: 80px;
+    }
+
+    .item-footer4 ul {
+        gap: 5px;
+    }
+
+    .item-footer5 {
+        margin-top: -5px;
+    }
+
+    .item-footer3 {
+        gap: 3px;
+
+        a img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .mapa-site {
+        gap: 3px;
+    }
+
+.footer {
+    background: linear-gradient(#dbf4eb);
+    color: gray;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-footer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer h3 {
+    color: gray;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    color: gray;
 }
 
 .img-footerlogo {
-    width: 133px;
+    width: 120px;
+    margin-bottom: 10px;
 }
-
-.item-footer1 {
-    display: flex;
-    flex-direction: column;
-    /* imagem em cima, texto embaixo */
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    /* espaço entre imagem e texto */
-    max-width: 300px;
-    /* controla a quebra do texto */
-}
-
-.imagem_banner_profisional{
-    width: 100%;
-
-
-}
-.item-footer p {
-    font-size: 13px;
-}
-
-/* MAPA DO SITE */
 
 .mapa-site {
-    display: flex;
-    flex-direction: column;
-    /* lista vertical */
-    gap: 7px;
-    /* espaço entre os li */
+    list-style: none;
+    padding: 0;
 }
 
-/* PRECISA DE SUPORTE */
+.mapa-site li {
+    margin-bottom: 8px;
+}
 
-.item-footer3 {
-    display: flex;
-    flex-direction: column;
-    gap: 10PX;
+.mapa-site a {
+    text-decoration: none;
+    color: gray;
+    transition: color 0.3s;
+}
+
+.mapa-site a:hover {
+    color: #6FA8DC;
+}
+
+.item-footer3 a {
+    display: block;
+    color: gray;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.item-footer3 a:hover {
+    color: #6FA8DC;
 }
 
 .img-footer3 {
-    width: 20PX;
-    height: 20PX;
-    margin-right: 10px;
+    width: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
-.item-footer3 a span {
-    color: var(--Preto);
+.footer4 {
+    list-style: none;
+    padding: 0;
 }
 
-
-/* SIGA-NOS */
-
-.item-footer4 ul {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    font-weight: bold;
-    /* negrito */
+.footer4 li {
+    margin-bottom: 10px;
 }
 
-.item-footer4 ul li a {
-    color: var(--Preto);
+.footer4 a {
+    color: gray;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
-.social-link {
-    display: flex;
-    flex-direction: column;
-    /* imagem em cima, texto embaixo */
-    align-items: center;
-    /* centraliza */
-    gap: 6px;
-    /* espaço entre imagem e texto */
+.footer4 a:hover {
+    color: #6FA8DC;
 }
 
 .img-instagram {
-    width: 24px;
-    height: 24px;
-}
-
-/* VOLTAR AO TOPO */
-
-.item-footer5 {
-    margin-top: 120px;
+    width: 20px;
+    margin-right: 6px;
+    vertical-align: middle;
 }
 
 .voltar-topo {
-    color: var(--Preto);
-    text-decoration: underline;
-    /* sublinhado */
+    background: #6FA8DC;
+    color: #fff;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s;
+    font-size: 0.9rem;
 }
 
-.Copyright {
+.voltar-topo:hover {
+    background: #5a96c6;
+}
+
+.copyright {
     text-align: center;
-    padding: 10px 55px 10px;
+    margin-top: 40px;
+    font-size: 0.85rem;
+    color: #ffffff;
+    padding-top: 15px;
 }
 
+/* ===== Responsividade ===== */
 
-/*observações sobre a responsividade do main
-O que esse CSS faz:
-O banner ocupa toda a largura e se ajusta automaticamente.
+@media (max-width: 1024px) {
+    .container-footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
-Os cards de produtos ficam em grid responsivo (2–4 colunas no desktop, 1 coluna no mobile).
+@media (max-width: 768px) {
+    .container-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-Cada card tem hover suave, etiqueta de desconto fixa, e botão estilizado.
+    .voltar-topo {
+        display: inline-block;
+        margin-top: 15px;
+    }
+}
 
-Em telas menores, os textos e botões se ajustam para melhor legibilidade.
+@media (max-width: 500px) {
+    .container-footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
 
-👉 Assim, seu main fica moderno, limpo e responsivo.*/
+    .img-footerlogo {
+        margin: 0 auto;
+    }
+
+    .footer4 li,
+    .mapa-site li,
+    .item-footer3 a {
+        text-align: center;
+    }
+}
