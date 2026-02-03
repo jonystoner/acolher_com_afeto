@@ -48,6 +48,7 @@ banner-img2 img {
     width: 100%;
     height: auto;
     display: block;
+    margin-top: 200px;
 }
 
 .titulo {
@@ -117,7 +118,7 @@ banner-img2 img {
    
 }
 
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
     .banner-img2 img {
         height: 250px;
     }
@@ -127,4 +128,4 @@ banner-img2 img {
     .banner-img2 img {
         height: 400px;
     }
-}
+}*/
