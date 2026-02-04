@@ -35,7 +35,27 @@ body {
     color: var(--Preto);
 }
 
+.navbar-custom {
+    background: linear-gradient(to right, #A8E6CF, #6FA8DC, #A8E6CF, #6FA8DC);
+    height: 75px;
+}
 
+.navbar-nav .nav-link {
+    color: #000 !important;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3 !important;
+}
+
+
+body {
+    background-color: var(--CinzaClaro);
+    color: var(--Preto);
+}
+/* 
 
 
 

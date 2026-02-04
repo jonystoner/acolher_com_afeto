@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Loja Acolher com afeto </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/loja_responsivo.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+    <header id="header" class="header">
+        <a href="index.html" class="logo">
+            <img class="img-logo" src="img/03-logo-100px.webp" alt="Logo acolher com afeto sem quebra cabeça">
+        </a>
+
+        <nav class="navegacao" aria-label="Navegação principal">
+            <button class="hamburger" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menu-principal"></button>
+            <ul class="nav-link" id="menu-principal">
+                <li><a href="" class="link">Sobre Nós</a></li>
+                <li><a href="familia.html" class="link">Para Família</a></li>
+                <li><a href="para_profissionais.html" class="link">Para Profissional</a></li>
+                <li><a href="#footer" class="link">Contato</a></li>
+                <li><a href="loja_responsivo.html" class="link">Loja</a></li>
+            </ul>
+        </nav>
+
+        <button class="search-btn" id="search-btn">
+            <img src="img/lupa.gif" alt="Buscar" aria-hidden="true">
+        </button>
+
+        <form class="barra-de-busca" role="search" id="barra-de-busca">
+            <label for="pesquisar" class="sr-only">Pesquisar no site</label>
+            <input type="search" id="pesquisar" name="pesquisar" placeholder="Pesquisar" class="pesquisar">
+        </form>
+    </header>
+
+    <div class="Banner">
+        <img id="promocoes" src="img/loja-banner-1200.webp" alt="Promoção da loja">
+    </div>
+
+    <main>
+        <nav class="menu-de-produtos">
+            <ul class="menu">
+                <li> <a href="acessorios.html"> Acessórios </a></li>
+                <li> <a href="brinquedos.html"> Brinquedos </a></li>
+                <li> <a href="bolsas_e_mochilas.html"> Bolsas e Mochilas </a>
+                <li>
+            </ul>
+        </nav>
+
+
+
+        <!-- <div class="container-principal">
+            <aside class="menu-lateralEsq-categorias">
+                <h2> Categorias</h2>
+                <nav>
+                    <h3> Acessórios</h3>
+                    <ul>
+                        <li> <a href="/">Cordão Identificador </a></li>
+                        <li> <a href="/">Cordão Identificador </a></li>
+                    </ul>
+
+                    <h3> Brinquedos</h3>
+                    <ul>
+                        <li> <a href="/">Bolinhas sensoriais</a></li>
+                    </ul>
+
+                    <h3> Roupas </h3>
+                    <ul>
+                        <li> </li>
+                    </ul>
+
+                </nav>
+            </aside>
+            </div>-->
+
+        <section id="acessorios">
+            <div class="Cards-produtos">
+                <div class="card1">
+                    <div class="etiqueta-desconto"> 40% off </div>
+                    <img src="img/loja-cardacess-cordaogirassol-300.webp"
+                        alt="cordao identificador para pessoas do espectro autista">
+                    <h3 class="titulo-produto"> Cordão identificador girassol </h3>
+                    <p class="preco-antigo"> R$ 19,99 </p>
+                    <p class="preco-atual"> R$ 11,95 </p>
+                    <button class="comprar">Comprar</button>
+                </div>
+
+                <div class="card1">
+                    <img src="img/loja-cardacess-pulseiras-300.webp"
+                        alt="pulseira identificador para pessoas do espectro autista">
+                    <h3 class="titulo-produto"> Pulseira TEA </h3>
+                    <p class="preco-atual"> R$ 11,95 </p>
+                    <button class="comprar">Comprar</button>
+                </div>
+
+
+
+
+                <div class="card1">
+                    <img src="img/loja-cardacess-kitid-300.webp"
+                        alt="kit de identificação para pessoas do espectro autista">
+                    <h3 class="titulo-produto"> kit de identificação </h3>
+                    <p class="preco-atual"> R$ 11,95 </p>
+                    <button class="comprar">Comprar</button>
+                </div>
+
+
+        </section>
+
+        <section id="brinquedos">
+            <div class="Cards-produtos">
+                <div class="card1">
+                    <img src="img/loja-cardbrinqeduc-blocosdemontar-300.webp">
+                    <h3 class="titulo-produto"> Blocos de montar </h3>
+                    <p class="preco-atual"> R$ 11,95 </p>
+                    <button class="comprar">Comprar</button>
+                </div>
+
+
+                <div class="card1">
+                    <img src="img/loja-cardbrinqeduc-tabuleiro-300.webp">
+                    <h3 class="titulo-produto"> Tabuleiro </h3>
+                    <p class="preco-atual"> R$ 11,95 </p>
+                    <button class="comprar">Comprar</button>
+                </div>
+
+                <div class="card1">
+                    <img src="img/loja-cardbrinqeduc-tabuleiroencaixe-300.webp">
+                    <h3 class="titulo-produto"> Tabuleiro de encaixe </h3>
+                    <p class="preco-atual"> R$ 11,95 </p>
+                    <button class="comprar">Comprar</button>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section id="bolsas-e-mochilas">
+            <div class="Cards-produtos">
+                <div class="card1">
+                    <img src="img/loja-mochila-447.webp">
+                    <h3 class="titulo-produto"> Mochila Autismo com nome personalizado </h3>
+                    <p class="preco-atual"> R$ 149,90 </p>
+                    <button class="comprar">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="tituloModal">Login</h1>
+                    <h5>Por favor insira seu e-mail e senha</h5>
+
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3 text-start">
+                        <label for="nomeInput" class="form-label"></label>
+                        <input type="text" class="form-control" id="nomeInput" placeholder="E-mail">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label for="nomeInput" class="form-label"></label>
+                        <input type="password" class="form-control" id="password" placeholder="senha">
+                    </div>
+
+                    <button type="button" class="btn-login">Login</button>
+                </div>
+                <div class="count">
+                    <a>
+                        Cliente novo ? <a href="#"> criar uma conta</a>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="footer" aria-label="Rodapé do site">
+        <div class="conteiner-footer">
+            <div class="item-footer1">
+                <img src="img/03-logo-100px.webp" alt="" class="img-footerlogo" aria-hidden="true">
+                <p>Um site especializado em facilitar o dia a dia do autista e sua família.</p>
+            </div>
+
+            <div class="item-footer2">
+                <h3>Mapa do site ></h3>
+                <ul class="mapa-site">
+                    <li><a href="/html/sobrenos.html">Sobre Nós</a></li>
+                    <li><a href="/html/familia.html">Para Família</a></li>
+                    <li><a href="/html/para_profissionais.html">Para Profissional</a></li>
+                    <li><a href="#footer">Contato</a></li>
+                    <li><a href="/html/loja_responsivo.html">Loja</a></li>
+                </ul>
+            </div>
+
+            <div class="item-footer3">
+                <h3>Precisa de suporte</h3>
+                <a href="#" aria-label="Enviar e-mail para suporte">
+                    <img src="img/Email.gif" alt="" class="img-footer3" aria-hidden="true">
+                    <span>E-mail</span>
+                </a>
+                <a href="https://wa.me/5511958399497" target="_blank"
+                    aria-label="Enviar mensagem para suporte no WhatsApp">
+                    <img src="img/telefone.gif" alt="Telefone" class="img-footer3" aria-hidden="true">
+                    <span>Fale Conosco</span>
+                </a>
+            </div>
+
+            <div class="item-footer4">
+                <ul class="footer4">
+                    <li><a href="#" class="social-link"><span>Siga-nos</span><img src="img/Instagram.gif"
+                                alt="Instagram" class="img-instagram"></a></li>
+                    <li><a href="#" class="termos-condicoes">Termos &amp; Condições</a></li>
+                    <li><a href="#" class="politica-privacidade">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="item-footer5">
+                <a href="#testes" class="voltar-topo" aria-label="Voltar ao início da página">Voltar ao topo</a>
+            </div>
+        </div>
+        <p class="Copyright">Copyright © 2025 acolhercomafeto.com.br - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+
+        const modal = new bootstrap.Modal(document.getElementById('meuModal'));
+        const abrirModalBtn = document.getElementById('abrirModalBtn');
+        const confirmarBtn = document.getElementById('confirmarBtn');
+
+
+        abrirModalBtn.addEventListener('click', () => {
+            modal.show();
+        });
+
+
+        confirmarBtn.addEventListener('click', () => {
+            const nome = document.getElementById('nomeInput').value;
+            alert(`Obrigado, ${nome || 'visitante'}!`);
+            modal.hide();
+        });
+    </script>
+
+</body>
+
+
+
+</html>
+
+<!-- head a seção que contém metadados (informações sobre os dados) de um documento, como o título da página, links para arquivos CSS, scripts e outras informações que não são exibidas diretamente no navegador-->
+
+<!-- title define o título de um documento, que aparece na barra de título ou na aba do navegador-->

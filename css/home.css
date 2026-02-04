@@ -83,16 +83,15 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
-    padding: 20PX;
-    border: 4px solid var(--Preto);
+    gap: 40px;
+    padding: 15PX;
 }
 
 .article-title {
     padding: 1px;
     font-size: 20px;
     text-align: center;
-    width: 100%;
+    width: 80%;
     height: auto;
     line-height: 1.1;
 }

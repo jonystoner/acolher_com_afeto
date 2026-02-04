@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    /* remove marcadores */
     outline: none;
     border: none;
     text-decoration: none;
@@ -15,7 +13,6 @@
 
 html {
     scroll-behavior: smooth;
-    /* Movimento do scroll - dixa mais suave*/
 }
 
 /* --- CORES PADRÃO --- */
@@ -31,18 +28,29 @@ html {
     --Azul: #1976CB;
     --Azulmedio: #7AC0D3;
     --Branco: #ffffff;
-
 }
 
 body {
     background-color: var(--CinzaClaro);
     color: var(--Preto);
 }
-/* 
-.sessao1 {
-    margin-top: 50px;
-} */
 
+.navbar-custom {
+    background: linear-gradient(to right, #A8E6CF, #6FA8DC, #A8E6CF, #6FA8DC);
+    height: 75px;
+}
+
+.navbar-nav .nav-link {
+    color: #000 !important;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3 !important;
+}
+
+/* Banner */
 .banner-img {
     width: 100%;
     margin: 0;
@@ -51,9 +59,7 @@ body {
 .banner-img img {
     width: 100%;
     height: auto;
-    /* mantém proporção */
     display: block;
-    /* remove espaços extras */
 }
 
 /* CONTAINER GERAL */
@@ -61,7 +67,6 @@ body {
     max-width: 1500px;
     margin: 0 auto;
     padding: 40px 20px;
-
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -96,7 +101,6 @@ body {
     color: #000;
     margin: 0;
     font-weight: normal;
-
 }
 
 /* TEXTO */
@@ -110,17 +114,14 @@ body {
 .saiba-mais {
     width: fit-content;
     padding: 15px 20px;
-
     background-color: var(--Azulmedio);
     color: var(--Preto);
     font-size: 18px;
     font-weight: 600;
-
     border-radius: 30px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* HOVER BOTÃO */
 .saiba-mais:hover {
     background-color: var(--LilasSuave);
     transform: scale(1.05);
@@ -133,72 +134,67 @@ body {
     gap: 50px;
     border-radius: 30px;
     margin: 80px 150px;
+}
 
-    div {
-        background-color: var(--VerdeClaro);
-        width: auto;
-        height: 260px;
-        border-radius: 30px 0 0 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        align-items: center;
+.hora-brincar div {
+    background-color: var(--VerdeClaro);
+    width: auto;
+    height: 260px;
+    border-radius: 30px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
 
-    }
+.hora-brincar div h2 {
+    font-weight: normal;
+    font-size: 35px;
+    margin-top: -50px;
+    margin-right: 200px;
+}
 
-    div h2 {
-        font-weight: normal;
-        font-size: 35px;
-        margin-top: -50px;
-        margin-right: 200px;
-    }
+.hora-brincar div p {
+    margin: 15px 120px;
+    font-size: 20px;
+}
 
-    div p {
-         margin: 15px 120px;
-         font-size: 20px;
-    }
-    .p2 {
-        font-size: 15px;
-    }
+.hora-brincar .p2 {
+    font-size: 15px;
 }
 
 /* Fale com a gente */
-
 .secao3-img {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* desktop */
-    /* gap: 10px; */
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
     position: relative;
-    z-index: 1;  /* imagens ficam no fundo */
+    z-index: 1;
+}
 
+.secao3-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
 
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;
-    }
-
-    /* película branca */
-    &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-color: rgba(255, 255, 255, 0.65);
-        pointer-events: none;
-    }
+.secao3-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.65);
+    pointer-events: none;
 }
 
 .secao3 {
-    position: relative; /* cria contexto */
+    position: relative;
 }
 
-/* texto por cima */
 .secao3-texto {
     position: absolute;
-    inset: 0;               /* ocupa toda a área */
-    z-index: 2;             /* fica acima das imagens */
+    inset: 0;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,14 +202,15 @@ body {
     text-align: center;
     padding: 20px;
     gap: 50px;
+}
 
-    h2 {
-        font-size: 36px;
-        font-weight: normal;
-    }
-    p {
-        font-size: 20px;
-    }
+.secao3-texto h2 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.secao3-texto p {
+    font-size: 20px;
 }
 
 .fale-gente {
@@ -225,23 +222,21 @@ body {
     cursor: pointer;
 }
 
-
+/* Contato */
 .contato-overlay {
     position: fixed;
     inset: 0;
     padding: 40px 20px;
-    display: none; /* escondido */
+    display: none;
     flex-direction: column;
     align-items: center;
-    z-index: 999;  
+    z-index: 999;
 }
 
-/* quando ativo */
 .contato-overlay.ativo {
     display: flex;
 }
 
-/* título */
 .contato-overlay h2 {
     color: var(--Azulsuave);
     font-size: 32px;
@@ -249,7 +244,6 @@ body {
     font-weight: normal;
 }
 
-/* caixa branca */
 .contato-box {
     position: relative;
     background-color: var(--Branco);
@@ -260,14 +254,12 @@ body {
     border: 2px solid var(--Azulsuave);
 }
 
-/* formulário */
 .form-contato {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-/* inputs */
 .form-contato input,
 .form-contato textarea {
     width: 100%;
@@ -275,16 +267,13 @@ body {
     border-radius: 16px;
     border: 1.8px solid var(--Azulsuave);
     font-size: 16px;
-    
 }
 
-/* textarea */
 .form-contato textarea {
     min-height: 160px;
     resize: none;
 }
 
-/* linha email + telefone */
 .linha {
     display: flex;
     gap: 15px;
@@ -294,7 +283,6 @@ body {
     flex: 1;
 }
 
-/* botão */
 .form-contato button {
     align-self: center;
     padding: 14px 40px;
@@ -304,12 +292,10 @@ body {
     cursor: pointer;
 }
 
-/* botão hover */
 .form-contato button:hover {
     background-color: var(--Verdeescuro);
 }
 
-/* botão fechar */
 .fechar {
     position: absolute;
     bottom: -45px;
@@ -319,3 +305,138 @@ body {
     cursor: pointer;
 }
 
+/* -------------------- */
+/*    RESPONSIVIDADE    */
+/* -------------------- */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+    .card_familia {
+        margin: 20px 40px;
+        gap: 30px;
+    }
+
+    .hora-brincar {
+        margin: 50px 60px;
+        gap: 30px;
+    }
+
+    .hora-brincar div h2 {
+        font-size: 28px;
+        margin-right: 100px;
+    }
+
+    .hora-brincar div p {
+        margin: 10px 40px;
+        font-size: 18px;
+    }
+
+    .secao3-texto h2 {
+        font-size: 30px;
+    }
+
+    .secao3-texto p {
+        font-size: 18px;
+    }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+    .card_familia {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .card_familia img {
+        width: 90%;
+        height: auto;
+    }
+
+    .card_familia h2 {
+        font-size: 24px;
+    }
+
+    .card_familia p {
+        font-size: 16px;
+    }
+
+    .hora-brincar {
+        flex-direction: column;
+        margin: 30px 20px;
+        gap: 20px;
+    }
+
+    .hora-brincar div {
+        width: 100%;
+        border-radius: 20px;
+        height: auto;
+        padding: 20px;
+    }
+
+    .hora-brincar div h2 {
+        margin: 0;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .hora-brincar div p {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .secao3-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .secao3-texto {
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .secao3-texto h2 {
+        font-size: 26px;
+    }
+
+    .secao3-texto p {
+        font-size: 16px;
+    }
+
+    .fale-gente {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+    .navbar-custom {
+        height: 65px;
+    }
+
+    .card_familia h2 {
+        font-size: 20px;
+    }
+
+    .card_familia p {
+        font-size: 14px;
+    }
+
+    .saiba-mais {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    .secao3-img {
+        grid-template-columns: 1fr;
+    }
+
+    .secao3-texto h2 {
+        font-size: 22px;
+    }
+
+    .secao3-texto p {
+        font-size: 14px;
+    }
+}
