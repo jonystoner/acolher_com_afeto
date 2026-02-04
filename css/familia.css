@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    /* remove marcadores */
     outline: none;
     border: none;
     text-decoration: none;
@@ -15,10 +13,8 @@
 
 html {
     scroll-behavior: smooth;
-    /* Movimento do scroll - dixa mais suave*/
 }
 
-/* --- CORES PADRÃO --- */
 :root {
     --Azulsuave: #6FA8DC;
     --VerdeClaro: #A8E6CF;
@@ -29,19 +25,14 @@ html {
     --Preto: #000000;
     --Verdeescuro: #0AF79F;
     --Azul: #1976CB;
-    --Azulmedio: #7AC0D3;
     --Branco: #ffffff;
-
 }
 
 body {
     background-color: var(--CinzaClaro);
     color: var(--Preto);
 }
-/* 
-.sessao1 {
-    margin-top: 50px;
-} */
+
 
 .banner-img {
     width: 100%;
@@ -58,42 +49,46 @@ body {
 
 /* CONTAINER GERAL */
 .conteiner_familia {
-    max-width: 1500px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    width: 100%;
+    height: auto;
 
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 
 /* CARD */
 .card_familia {
     display: flex;
     align-items: center;
+    flex-direction: column;
     gap: 50px;
-    border-radius: 16px;
-    margin: 10px 100px;
+    margin: 10px 5px;
+    width: auto;
+    height: auto;
 }
 
 /* IMAGEM */
 .card_familia img {
-    width: auto;
+    width: 100%;
     height: auto;
     display: block;
+    border-radius: 16px;
 }
 
 /* CONTEÚDO */
 .card_familia div {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 10px;
 }
 
 /* TÍTULO */
 .card_familia h2 {
-    font-size: 30px;
-    color: #000;
+    font-size: 20px;
+    color: var(--Preto);
     margin: 0;
     font-weight: normal;
 
@@ -101,7 +96,7 @@ body {
 
 /* TEXTO */
 .card_familia p {
-    font-size: 18px;
+    font-size: 13px;
     line-height: 1.6;
     margin: 0;
 }
@@ -109,12 +104,11 @@ body {
 /* BOTÃO */
 .saiba-mais {
     width: fit-content;
-    padding: 15px 20px;
+    padding: 10px 15px;
 
-    background-color: var(--Azulmedio);
+    background-color: var(--Azulsuave);
     color: var(--Preto);
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 15px;
 
     border-radius: 30px;
     transition: background-color 0.3s ease, transform 0.2s ease;
@@ -130,36 +124,44 @@ body {
 .hora-brincar {
     display: flex;
     align-items: center;
-    gap: 50px;
+    flex-direction: column;
+    gap: 10px;
     border-radius: 30px;
-    margin: 80px 150px;
+    width: 100%;
+    height: auto;
+padding: 20PX;
 
     div {
         background-color: var(--VerdeClaro);
-        width: auto;
-        height: 260px;
+        width: 100%;
+        height: auto;
         border-radius: 30px 0 0 30px;
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 5px;
         align-items: center;
+        justify-content: center;
 
     }
 
     div h2 {
         font-weight: normal;
-        font-size: 35px;
-        margin-top: -50px;
-        margin-right: 200px;
+        font-size: 20px;
     }
 
     div p {
-         margin: 15px 120px;
-         font-size: 20px;
+        padding: 15PX;
+         font-size: 13px;
     }
     .p2 {
         font-size: 15px;
     }
+}
+
+.hora-brincar-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 30px 30px 0;
 }
 
 /* Fale com a gente */
@@ -192,6 +194,8 @@ body {
 
 .secao3 {
     position: relative; /* cria contexto */
+    width: auto;
+    height: auto;
 }
 
 /* texto por cima */
@@ -204,22 +208,24 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    gap: 50px;
+    /* padding: 20px; */
+    gap: 5px;
+    width: 100%;
+    height: auto;
 
     h2 {
-        font-size: 36px;
+        font-size: 13px;
         font-weight: normal;
     }
     p {
-        font-size: 20px;
+        font-size: 10px;
     }
 }
 
 .fale-gente {
-    font-size: 24px;
-    background-color: var(--Azulmedio);
-    padding: 15px 30px;
+    font-size: 13px;
+    background: var(--Azulsuave);
+    padding: 5px 10px;
     color: var(--Preto);
     border-radius: 20px;
     cursor: pointer;
@@ -319,3 +325,152 @@ body {
     cursor: pointer;
 }
 
+@media (min-width: 650px) {
+    .conteiner_familia {
+    gap: 10px;
+}
+
+/* CARD */
+.card_familia {
+    flex-direction: row;
+    gap: 25px;
+}
+
+/* IMAGEM */
+.card_familia img {
+    
+}
+
+/* CONTEÚDO */
+.card_familia div {
+    gap: 15px;
+}
+
+/* TÍTULO */
+.card_familia h2 {
+    font-size: 24px;
+
+}
+
+/* TEXTO */
+.card_familia p {
+    font-size: 15px;
+}
+
+/* BOTÃO */
+.saiba-mais {
+    padding: 10px 15px;
+    font-size: 18px;
+}
+
+/* Hora do Brincar juntos */
+.hora-brincar {
+    flex-direction: row;
+    gap: 10px;
+
+    div {
+        gap: 5px;
+        padding: 15px;
+    }
+
+    div h2 {
+        font-weight: normal;
+        font-size: 24px;
+    }
+
+    div p {
+        padding: 15PX;
+         font-size: 15px;
+    }
+    .p2 {
+        font-size: 15px;
+    }
+}
+
+
+.secao3 {
+    position: relative; /* cria contexto */
+    width: auto;
+    height: auto;
+}
+
+/* texto por cima */
+.secao3-texto {
+    gap: 20px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: normal;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+
+.fale-gente {
+    font-size: 15px;
+    padding: 10px 15px;
+}
+
+
+.contato-overlay {
+    
+}
+
+/* quando ativo */
+.contato-overlay.ativo {
+    
+}
+
+/* título */
+.contato-overlay h2 {
+    
+}
+
+/* caixa branca */
+.contato-box {
+    width: 70%;
+}
+
+/* formulário */
+.form-contato {
+    
+}
+
+/* inputs */
+.form-contato input,
+.form-contato textarea {
+    
+    
+}
+
+/* textarea */
+.form-contato textarea {
+    
+}
+
+/* linha email + telefone */
+.linha {
+    
+}
+
+.linha input {
+    
+}
+
+/* botão */
+.form-contato button {
+    
+}
+
+
+/* botão fechar */
+.fechar {
+   
+}
+
+}
+
+@media (min-width: 999px) {}
+
+@media (min-width: 1250px) {}
