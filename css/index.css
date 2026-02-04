@@ -1,20 +1,6 @@
-.navbar-custom {
-    background: linear-gradient(to right, #A8E6CF, #6FA8DC, #A8E6CF, #6FA8DC);
-    height: 75px;
-}
-
-.navbar-nav .nav-link {
-    color: #000 !important;
-    font-weight: 500;
-    margin: 0 10px;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #0056b3 !important;
-}
 
 .form-control {
-    border-radius: 10px;
+    border-radius: 1000px;
 }
 
 .banner {
@@ -137,7 +123,7 @@
 
 /* --- RODAPÉ --- */
 footer {
-    border-top: solid 3px rgb(139, 15, 15);
+    border-top: solid 3px rgb(107, 107, 107);
 }
 
 .conteiner-footer {
@@ -249,36 +235,6 @@ footer {
 }
 
 
-/* --- RESPONSIVEL --- */
-
-/* Botão hamburger*/
-.hamburger {
-    display: none;
-    border: none;
-    background: none;
-    border-top: 3px solid var(--CinzaClaro);
-    cursor: pointer;
-
-    position: absolute;
-    /* Posição do botão hamburger*/
-    top: 20px;
-    right: 16px;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: var(--CinzaClaro);
-    margin-top: 5px;
-
-    position: relative;
-    transition: 0.3s;
-}
-
-
 @media (max-width: 1250px) {
     .header {
         padding: 20px 15px 1px;
@@ -352,11 +308,6 @@ footer {
         gap: 10px;
     }
 
-    .img-logo {
-        max-width: 100px;
-        /* controla o tamanho máximo */
-        background-color: color-mix(in srgb, var(--VerdeClaro) 80%, var(--CinzaClaro));
-    }
 
     .texto-arco {
         font-size: 15px;
@@ -364,11 +315,13 @@ footer {
 
     .arco-svg {
         margin: -120px auto 0 auto;
+        stroke: none;
         /* aproxima o texto da imagem */
     }
 
     path {
         d: path("M 30 100 Q 100 200 200 70");
+         stroke: none;
         /* controla o arco */
         fill: transparent;
     }

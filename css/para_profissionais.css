@@ -123,7 +123,7 @@ header {
 /* Logo */
 .logo img {
     height: auto;
-    width: 20%;
+    
 }
 
 /* Barra de pesquisa */
@@ -417,10 +417,7 @@ RESPONSIVO
 
 }
 
-@media (max-width: 480px) {
-    .logo img {
-        height: 40px;
-    }
+@media (max-width: 480px) { 
 
     .barra-pesquisa input[type="search"] {
         font-size: 14px;

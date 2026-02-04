@@ -5,13 +5,17 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    outline: none;
     border: none;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+
+    :focus-visible {
+        outline: 3px solid var(--Azul);
+        outline-offset: 3px;
+    }
 }
 
-html {
+html {  
     scroll-behavior: smooth;
 }
 
@@ -66,6 +70,10 @@ body {
     font-size: 18PX;
 }
 
+.link {
+    text-decoration: none;
+}
+
 /* --- Barrra de navegação --- */
 .nav-link {
     position: absolute;
@@ -84,6 +92,7 @@ body {
     pointer-events: none;
     border-radius: 0 0 30px 0;
     border: 4px 0 solid var(--Preto);
+    z-index: 1000;
 
 }
 
@@ -136,6 +145,7 @@ body {
     position: absolute;
     top: 15px;
     left: 16px;
+    z-index: 10000;
 }
 
 .hamburger::before,
@@ -235,8 +245,229 @@ body {
     }
 }
 
+@media (min-width: 650px) {
+
+    .header {
+        background: linear-gradient(90deg, var(--CinzaClaro), var(--VerdeClaro), var(--Azulsuave));
+        padding: 2px;
+
+    }
+
+    .img-logo {
+        width: 55%;
+
+    }
+
+    .arco-svg {
+        height: 60px;
+        margin-top: -40px;
+    }
+
+    .nav-link {
+        position: static;
+        width: 100%;
+        height: auto;
+        background: none;
+        clip-path: none;
+        transition: none;
+        flex-direction: row;
+        gap: 20px;
+        pointer-events: auto;
+    }
+
+    .link {
+        opacity: 1;
+        font-size: 15px;
+        transition: none;
+    }
+
+    .nav-link li .link {
+        transition-delay: 0s;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .barra-de-busca {
+        padding: 5px;
+        width: 50%;
+    }
+
+    .pesquisar {
+        font-size: 15px;
+    }
+
+    .conteiner-footer {
+        flex-direction: unset;
+        gap: 1px;
+        padding: 5px;
+        white-space: nowrap;
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .img-footerlogo {
+        width: 30%;
+    }
+
+    .item-footer1 {
+        gap: 1px;
+        white-space: normal;
+
+        p {
+            white-space: normal;
+        }
+    }
+
+    .item-footer3 {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .item-footer5 {
+        margin-top: 60px;
+    }
+
+    .Copyright {
+        font-size: 15px;
+    }
+}
 
 
+@media (min-width: 1250px) {
+
+    .link {
+        font-size: 20px;
+    }
+
+    .pesquisar {
+        font-size: 20px;
+    }
+
+    .conteiner-footer {
+        font-size: 20px;
+    }
+
+    .Copyright {
+        font-size: 20px;
+    }
+}
+
+
+/* --- RODAPÉ --- */
+footer {
+    border-top: solid 3px rgb(107, 107, 107);
+}
+
+.conteiner-footer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 30px 35px 30px;
+    background: linear-gradient(180deg,
+            color-mix(in srgb, var(--VerdeClaro) 25%, var(--CinzaClaro)),
+            color-mix(in srgb, var(--Azulsuave) 25%, var(--CinzaClaro)));
+    font-size: 10px;
+
+}
+
+.img-footerlogo {
+    width: 133px;
+}
+
+.item-footer1 {
+    display: flex;
+    flex-direction: column;
+    /* imagem em cima, texto embaixo */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    /* espaço entre imagem e texto */
+    max-width: 300px;
+    /* controla a quebra do texto */
+}
+
+.item-footer p {
+    font-size: 13px;
+}
+
+/* MAPA DO SITE */
+
+.mapa-site {
+    display: flex;
+    flex-direction: column;
+    /* lista vertical */
+    gap: 7px;
+    /* espaço entre os li */
+}
+
+/* PRECISA DE SUPORTE */
+
+.item-footer3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10PX;
+}
+
+.img-footer3 {
+    width: 20PX;
+    height: 20PX;
+    margin-right: 10px;
+}
+
+.item-footer3 a span {
+    color: var(--Preto);
+}
+
+
+/* SIGA-NOS */
+
+.item-footer4 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-weight: bold;
+    /* negrito */
+}
+
+.item-footer4 ul li a {
+    color: var(--Preto);
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    /* imagem em cima, texto embaixo */
+    align-items: center;
+    /* centraliza */
+    gap: 6px;
+    /* espaço entre imagem e texto */
+}
+
+.img-instagram {
+    width: 24px;
+    height: 24px;
+}
+
+/* VOLTAR AO TOPO */
+
+.item-footer5 {
+    margin-top: 120px;
+}
+
+.voltar-topo {
+    color: var(--Preto);
+    text-decoration: underline;
+    /* sublinhado */
+}
+
+.Copyright {    
+    text-align: center;
+    color: black ;
+    padding: 10px  10px;
+}
 
 @media (min-width: 650px) {
 
@@ -399,122 +630,6 @@ body {
         font-size: 20px;
     }
 }
-
-
-/* --- RODAPÉ --- */
-footer {
-    border-top: solid 3px rgb(107, 107, 107);
-}
-
-.conteiner-footer {
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    padding: 30px 35px 30px;
-    background: linear-gradient(180deg,
-            color-mix(in srgb, var(--VerdeClaro) 25%, var(--CinzaClaro)),
-            color-mix(in srgb, var(--Azulsuave) 25%, var(--CinzaClaro)));
-    font-size: 10px;
-
-}
-
-.img-footerlogo {
-    width: 133px;
-}
-
-.item-footer1 {
-    display: flex;
-    flex-direction: column;
-    /* imagem em cima, texto embaixo */
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    /* espaço entre imagem e texto */
-    max-width: 300px;
-    /* controla a quebra do texto */
-}
-
-.item-footer p {
-    font-size: 13px;
-}
-
-/* MAPA DO SITE */
-
-.mapa-site {
-    display: flex;
-    flex-direction: column;
-    /* lista vertical */
-    gap: 7px;
-    /* espaço entre os li */
-}
-
-/* PRECISA DE SUPORTE */
-
-.item-footer3 {
-    display: flex;
-    flex-direction: column;
-    gap: 10PX;
-}
-
-.img-footer3 {
-    width: 20PX;
-    height: 20PX;
-    margin-right: 10px;
-}
-
-.item-footer3 a span {
-    color: var(--Preto);
-}
-
-
-/* SIGA-NOS */
-
-.item-footer4 ul {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    font-weight: bold;
-    /* negrito */
-}
-
-.item-footer4 ul li a {
-    color: var(--Preto);
-}
-
-.social-link {
-    display: flex;
-    flex-direction: column;
-    /* imagem em cima, texto embaixo */
-    align-items: center;
-    /* centraliza */
-    gap: 6px;
-    /* espaço entre imagem e texto */
-}
-
-.img-instagram {
-    width: 24px;
-    height: 24px;
-}
-
-/* VOLTAR AO TOPO */
-
-.item-footer5 {
-    margin-top: 120px;
-}
-
-.voltar-topo {
-    color: var(--Preto);
-    text-decoration: underline;
-    /* sublinhado */
-}
-
-.Copyright {    
-    text-align: center;
-    color: black ;
-    padding: 10px  10px;
-}
-
-
 
 /* ===== Responsividade ===== */
 
